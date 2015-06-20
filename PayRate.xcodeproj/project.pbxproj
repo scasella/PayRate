@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		882378281B33B585005D4868 /* pButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 882378251B33B585005D4868 /* pButton.png */; };
+		8823782A1B33B585005D4868 /* cashOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 882378271B33B585005D4868 /* cashOut.png */; };
+		8875D1C61B30F15A00B60105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1C51B30F15A00B60105 /* AppDelegate.swift */; };
+		8875D1C81B30F15A00B60105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1C71B30F15A00B60105 /* ViewController.swift */; };
+		8875D1CB1B30F15A00B60105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1C91B30F15A00B60105 /* Main.storyboard */; };
+		8875D1CD1B30F15A00B60105 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1CC1B30F15A00B60105 /* Images.xcassets */; };
+		8875D1D01B30F15A00B60105 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1CE1B30F15A00B60105 /* LaunchScreen.xib */; };
+		8875D1DC1B30F15A00B60105 /* PayClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1DB1B30F15A00B60105 /* PayClockTests.swift */; };
+		8875D1EC1B30F46600B60105 /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1E51B30F46600B60105 /* coin.png */; };
+		88BB63E81B3505BB00EBC6AD /* coinBag2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63E71B3505BB00EBC6AD /* coinBag2.png */; };
+		88BB63EA1B35076300EBC6AD /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63E91B35076300EBC6AD /* button2.png */; };
+		88BB63ED1B3507F800EBC6AD /* greenBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63EB1B3507F800EBC6AD /* greenBG.png */; };
+		88BB63EE1B3507F800EBC6AD /* darkBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63EC1B3507F800EBC6AD /* darkBG.png */; };
+		88BB63F21B35C8E000EBC6AD /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB63F11B35C8E000EBC6AD /* ProgressView.swift */; };
+		88BB63F41B35E65700EBC6AD /* ProgressViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB63F31B35E65700EBC6AD /* ProgressViewTwo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8875D1D61B30F15A00B60105 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8875D1B81B30F15A00B60105 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8875D1BF1B30F15A00B60105;
+			remoteInfo = PayClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		882378251B33B585005D4868 /* pButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pButton.png; sourceTree = "<group>"; };
+		882378271B33B585005D4868 /* cashOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cashOut.png; sourceTree = "<group>"; };
+		8875D1C01B30F15A00B60105 /* PayRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8875D1C41B30F15A00B60105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8875D1C51B30F15A00B60105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8875D1C71B30F15A00B60105 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8875D1CA1B30F15A00B60105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8875D1CC1B30F15A00B60105 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8875D1CF1B30F15A00B60105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8875D1D51B30F15A00B60105 /* PayRateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayRateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8875D1DA1B30F15A00B60105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8875D1DB1B30F15A00B60105 /* PayClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayClockTests.swift; sourceTree = "<group>"; };
+		8875D1E51B30F46600B60105 /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin.png; sourceTree = "<group>"; };
+		88BB63E71B3505BB00EBC6AD /* coinBag2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinBag2.png; sourceTree = "<group>"; };
+		88BB63E91B35076300EBC6AD /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
+		88BB63EB1B3507F800EBC6AD /* greenBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenBG.png; sourceTree = "<group>"; };
+		88BB63EC1B3507F800EBC6AD /* darkBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkBG.png; sourceTree = "<group>"; };
+		88BB63F11B35C8E000EBC6AD /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		88BB63F31B35E65700EBC6AD /* ProgressViewTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewTwo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8875D1BD1B30F15A00B60105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8875D1D21B30F15A00B60105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8875D1B71B30F15A00B60105 = {
+			isa = PBXGroup;
+			children = (
+				8875D1C21B30F15A00B60105 /* PayClock */,
+				8875D1D81B30F15A00B60105 /* PayClockTests */,
+				8875D1C11B30F15A00B60105 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8875D1C11B30F15A00B60105 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8875D1C01B30F15A00B60105 /* PayRate.app */,
+				8875D1D51B30F15A00B60105 /* PayRateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8875D1C21B30F15A00B60105 /* PayClock */ = {
+			isa = PBXGroup;
+			children = (
+				8875D1E51B30F46600B60105 /* coin.png */,
+				882378251B33B585005D4868 /* pButton.png */,
+				88BB63E71B3505BB00EBC6AD /* coinBag2.png */,
+				88BB63E91B35076300EBC6AD /* button2.png */,
+				88BB63EB1B3507F800EBC6AD /* greenBG.png */,
+				88BB63EC1B3507F800EBC6AD /* darkBG.png */,
+				882378271B33B585005D4868 /* cashOut.png */,
+				88BB63F11B35C8E000EBC6AD /* ProgressView.swift */,
+				88BB63F31B35E65700EBC6AD /* ProgressViewTwo.swift */,
+				8875D1C51B30F15A00B60105 /* AppDelegate.swift */,
+				8875D1C71B30F15A00B60105 /* ViewController.swift */,
+				8875D1C91B30F15A00B60105 /* Main.storyboard */,
+				8875D1CC1B30F15A00B60105 /* Images.xcassets */,
+				8875D1CE1B30F15A00B60105 /* LaunchScreen.xib */,
+				8875D1C31B30F15A00B60105 /* Supporting Files */,
+			);
+			path = PayClock;
+			sourceTree = "<group>";
+		};
+		8875D1C31B30F15A00B60105 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8875D1C41B30F15A00B60105 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8875D1D81B30F15A00B60105 /* PayClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				8875D1DB1B30F15A00B60105 /* PayClockTests.swift */,
+				8875D1D91B30F15A00B60105 /* Supporting Files */,
+			);
+			path = PayClockTests;
+			sourceTree = "<group>";
+		};
+		8875D1D91B30F15A00B60105 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8875D1DA1B30F15A00B60105 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8875D1BF1B30F15A00B60105 /* PayRate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8875D1DF1B30F15A00B60105 /* Build configuration list for PBXNativeTarget "PayRate" */;
+			buildPhases = (
+				8875D1BC1B30F15A00B60105 /* Sources */,
+				8875D1BD1B30F15A00B60105 /* Frameworks */,
+				8875D1BE1B30F15A00B60105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PayRate;
+			productName = PayClock;
+			productReference = 8875D1C01B30F15A00B60105 /* PayRate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8875D1D41B30F15A00B60105 /* PayRateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8875D1E21B30F15A00B60105 /* Build configuration list for PBXNativeTarget "PayRateTests" */;
+			buildPhases = (
+				8875D1D11B30F15A00B60105 /* Sources */,
+				8875D1D21B30F15A00B60105 /* Frameworks */,
+				8875D1D31B30F15A00B60105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8875D1D71B30F15A00B60105 /* PBXTargetDependency */,
+			);
+			name = PayRateTests;
+			productName = PayClockTests;
+			productReference = 8875D1D51B30F15A00B60105 /* PayRateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8875D1B81B30F15A00B60105 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Stephen Casella";
+				TargetAttributes = {
+					8875D1BF1B30F15A00B60105 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					8875D1D41B30F15A00B60105 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 8875D1BF1B30F15A00B60105;
+					};
+				};
+			};
+			buildConfigurationList = 8875D1BB1B30F15A00B60105 /* Build configuration list for PBXProject "PayRate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8875D1B71B30F15A00B60105;
+			productRefGroup = 8875D1C11B30F15A00B60105 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8875D1BF1B30F15A00B60105 /* PayRate */,
+				8875D1D41B30F15A00B60105 /* PayRateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8875D1BE1B30F15A00B60105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88BB63ED1B3507F800EBC6AD /* greenBG.png in Resources */,
+				8875D1EC1B30F46600B60105 /* coin.png in Resources */,
+				8875D1CB1B30F15A00B60105 /* Main.storyboard in Resources */,
+				8875D1D01B30F15A00B60105 /* LaunchScreen.xib in Resources */,
+				88BB63E81B3505BB00EBC6AD /* coinBag2.png in Resources */,
+				88BB63EA1B35076300EBC6AD /* button2.png in Resources */,
+				8875D1CD1B30F15A00B60105 /* Images.xcassets in Resources */,
+				882378281B33B585005D4868 /* pButton.png in Resources */,
+				88BB63EE1B3507F800EBC6AD /* darkBG.png in Resources */,
+				8823782A1B33B585005D4868 /* cashOut.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8875D1D31B30F15A00B60105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8875D1BC1B30F15A00B60105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8875D1C81B30F15A00B60105 /* ViewController.swift in Sources */,
+				8875D1C61B30F15A00B60105 /* AppDelegate.swift in Sources */,
+				88BB63F41B35E65700EBC6AD /* ProgressViewTwo.swift in Sources */,
+				88BB63F21B35C8E000EBC6AD /* ProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8875D1D11B30F15A00B60105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8875D1DC1B30F15A00B60105 /* PayClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8875D1D71B30F15A00B60105 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8875D1BF1B30F15A00B60105 /* PayRate */;
+			targetProxy = 8875D1D61B30F15A00B60105 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8875D1C91B30F15A00B60105 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8875D1CA1B30F15A00B60105 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8875D1CE1B30F15A00B60105 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8875D1CF1B30F15A00B60105 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8875D1DD1B30F15A00B60105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8875D1DE1B30F15A00B60105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8875D1E01B30F15A00B60105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PayClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = PayRate;
+			};
+			name = Debug;
+		};
+		8875D1E11B30F15A00B60105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PayClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = PayRate;
+			};
+			name = Release;
+		};
+		8875D1E31B30F15A00B60105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PayClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = PayRateTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayClock.app/PayClock";
+			};
+			name = Debug;
+		};
+		8875D1E41B30F15A00B60105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PayClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = PayRateTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayClock.app/PayClock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8875D1BB1B30F15A00B60105 /* Build configuration list for PBXProject "PayRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8875D1DD1B30F15A00B60105 /* Debug */,
+				8875D1DE1B30F15A00B60105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8875D1DF1B30F15A00B60105 /* Build configuration list for PBXNativeTarget "PayRate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8875D1E01B30F15A00B60105 /* Debug */,
+				8875D1E11B30F15A00B60105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8875D1E21B30F15A00B60105 /* Build configuration list for PBXNativeTarget "PayRateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8875D1E31B30F15A00B60105 /* Debug */,
+				8875D1E41B30F15A00B60105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8875D1B81B30F15A00B60105 /* Project object */;
+}
