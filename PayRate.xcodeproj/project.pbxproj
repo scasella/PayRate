@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		882378281B33B585005D4868 /* pButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 882378251B33B585005D4868 /* pButton.png */; };
 		8823782A1B33B585005D4868 /* cashOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 882378271B33B585005D4868 /* cashOut.png */; };
+		8843F6681B362BD900794FC3 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8843F6641B362BD900794FC3 /* blueButton.png */; };
+		8843F6691B362BD900794FC3 /* greyBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 8843F6651B362BD900794FC3 /* greyBG.png */; };
+		8843F66A1B362BD900794FC3 /* coinBag3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8843F6661B362BD900794FC3 /* coinBag3.png */; };
+		8843F66B1B362BD900794FC3 /* smallButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8843F6671B362BD900794FC3 /* smallButton.png */; };
 		8875D1C61B30F15A00B60105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1C51B30F15A00B60105 /* AppDelegate.swift */; };
 		8875D1C81B30F15A00B60105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1C71B30F15A00B60105 /* ViewController.swift */; };
 		8875D1CB1B30F15A00B60105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1C91B30F15A00B60105 /* Main.storyboard */; };
@@ -16,12 +20,23 @@
 		8875D1D01B30F15A00B60105 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1CE1B30F15A00B60105 /* LaunchScreen.xib */; };
 		8875D1DC1B30F15A00B60105 /* PayClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1DB1B30F15A00B60105 /* PayClockTests.swift */; };
 		8875D1EC1B30F46600B60105 /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1E51B30F46600B60105 /* coin.png */; };
+		88ABFAF71B3791BD00F407CC /* PTSans.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 88ABFAF61B3791BD00F407CC /* PTSans.ttc */; };
+		88ABFAF91B37A1BE00F407CC /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABFAF81B37A1BE00F407CC /* YokoTextField.swift */; };
+		88ABFAFB1B37A1E000F407CC /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABFAFA1B37A1E000F407CC /* TextFieldsEffects.swift */; };
+		88ABFAFD1B37A59C00F407CC /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABFAFC1B37A59C00F407CC /* KaedeTextField.swift */; };
 		88BB63E81B3505BB00EBC6AD /* coinBag2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63E71B3505BB00EBC6AD /* coinBag2.png */; };
 		88BB63EA1B35076300EBC6AD /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63E91B35076300EBC6AD /* button2.png */; };
 		88BB63ED1B3507F800EBC6AD /* greenBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63EB1B3507F800EBC6AD /* greenBG.png */; };
 		88BB63EE1B3507F800EBC6AD /* darkBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63EC1B3507F800EBC6AD /* darkBG.png */; };
 		88BB63F21B35C8E000EBC6AD /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB63F11B35C8E000EBC6AD /* ProgressView.swift */; };
 		88BB63F41B35E65700EBC6AD /* ProgressViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB63F31B35E65700EBC6AD /* ProgressViewTwo.swift */; };
+		88F372831B3735C300BA1713 /* screenTwoGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F3727F1B3735C300BA1713 /* screenTwoGreen.png */; };
+		88F372841B3735C300BA1713 /* screenTwoButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F372801B3735C300BA1713 /* screenTwoButton.png */; };
+		88F372851B3735C300BA1713 /* screenTwoTF.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F372811B3735C300BA1713 /* screenTwoTF.png */; };
+		88F372861B3735C300BA1713 /* screenTwoBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F372821B3735C300BA1713 /* screenTwoBG.png */; };
+		88F372881B37369400BA1713 /* screenTwoWTF.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F372871B37369400BA1713 /* screenTwoWTF.png */; };
+		88F3728A1B376DBE00BA1713 /* greenBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F372891B376DBE00BA1713 /* greenBox.png */; };
+		88F3728C1B378D8300BA1713 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3728B1B378D8300BA1713 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +52,10 @@
 /* Begin PBXFileReference section */
 		882378251B33B585005D4868 /* pButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pButton.png; sourceTree = "<group>"; };
 		882378271B33B585005D4868 /* cashOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cashOut.png; sourceTree = "<group>"; };
+		8843F6641B362BD900794FC3 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
+		8843F6651B362BD900794FC3 /* greyBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greyBG.png; sourceTree = "<group>"; };
+		8843F6661B362BD900794FC3 /* coinBag3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinBag3.png; sourceTree = "<group>"; };
+		8843F6671B362BD900794FC3 /* smallButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallButton.png; sourceTree = "<group>"; };
 		8875D1C01B30F15A00B60105 /* PayRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8875D1C41B30F15A00B60105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8875D1C51B30F15A00B60105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,12 +67,23 @@
 		8875D1DA1B30F15A00B60105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8875D1DB1B30F15A00B60105 /* PayClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayClockTests.swift; sourceTree = "<group>"; };
 		8875D1E51B30F46600B60105 /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin.png; sourceTree = "<group>"; };
+		88ABFAF61B3791BD00F407CC /* PTSans.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTSans.ttc; sourceTree = "<group>"; };
+		88ABFAF81B37A1BE00F407CC /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
+		88ABFAFA1B37A1E000F407CC /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
+		88ABFAFC1B37A59C00F407CC /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
 		88BB63E71B3505BB00EBC6AD /* coinBag2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinBag2.png; sourceTree = "<group>"; };
 		88BB63E91B35076300EBC6AD /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
 		88BB63EB1B3507F800EBC6AD /* greenBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenBG.png; sourceTree = "<group>"; };
 		88BB63EC1B3507F800EBC6AD /* darkBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkBG.png; sourceTree = "<group>"; };
 		88BB63F11B35C8E000EBC6AD /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		88BB63F31B35E65700EBC6AD /* ProgressViewTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewTwo.swift; sourceTree = "<group>"; };
+		88F3727F1B3735C300BA1713 /* screenTwoGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenTwoGreen.png; sourceTree = "<group>"; };
+		88F372801B3735C300BA1713 /* screenTwoButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenTwoButton.png; sourceTree = "<group>"; };
+		88F372811B3735C300BA1713 /* screenTwoTF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenTwoTF.png; sourceTree = "<group>"; };
+		88F372821B3735C300BA1713 /* screenTwoBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenTwoBG.png; sourceTree = "<group>"; };
+		88F372871B37369400BA1713 /* screenTwoWTF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenTwoWTF.png; sourceTree = "<group>"; };
+		88F372891B376DBE00BA1713 /* greenBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenBox.png; sourceTree = "<group>"; };
+		88F3728B1B378D8300BA1713 /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,17 +125,32 @@
 		8875D1C21B30F15A00B60105 /* PayClock */ = {
 			isa = PBXGroup;
 			children = (
+				88ABFAF61B3791BD00F407CC /* PTSans.ttc */,
 				8875D1E51B30F46600B60105 /* coin.png */,
+				88F372891B376DBE00BA1713 /* greenBox.png */,
+				88F372871B37369400BA1713 /* screenTwoWTF.png */,
+				88F3727F1B3735C300BA1713 /* screenTwoGreen.png */,
+				88F372801B3735C300BA1713 /* screenTwoButton.png */,
+				88F372811B3735C300BA1713 /* screenTwoTF.png */,
+				88F372821B3735C300BA1713 /* screenTwoBG.png */,
 				882378251B33B585005D4868 /* pButton.png */,
+				8843F6641B362BD900794FC3 /* blueButton.png */,
+				8843F6651B362BD900794FC3 /* greyBG.png */,
+				8843F6661B362BD900794FC3 /* coinBag3.png */,
+				8843F6671B362BD900794FC3 /* smallButton.png */,
 				88BB63E71B3505BB00EBC6AD /* coinBag2.png */,
 				88BB63E91B35076300EBC6AD /* button2.png */,
 				88BB63EB1B3507F800EBC6AD /* greenBG.png */,
 				88BB63EC1B3507F800EBC6AD /* darkBG.png */,
 				882378271B33B585005D4868 /* cashOut.png */,
+				88ABFAFC1B37A59C00F407CC /* KaedeTextField.swift */,
+				88ABFAFA1B37A1E000F407CC /* TextFieldsEffects.swift */,
+				88ABFAF81B37A1BE00F407CC /* YokoTextField.swift */,
 				88BB63F11B35C8E000EBC6AD /* ProgressView.swift */,
 				88BB63F31B35E65700EBC6AD /* ProgressViewTwo.swift */,
 				8875D1C51B30F15A00B60105 /* AppDelegate.swift */,
 				8875D1C71B30F15A00B60105 /* ViewController.swift */,
+				88F3728B1B378D8300BA1713 /* DetailController.swift */,
 				8875D1C91B30F15A00B60105 /* Main.storyboard */,
 				8875D1CC1B30F15A00B60105 /* Images.xcassets */,
 				8875D1CE1B30F15A00B60105 /* LaunchScreen.xib */,
@@ -220,15 +265,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				88BB63ED1B3507F800EBC6AD /* greenBG.png in Resources */,
+				88F3728A1B376DBE00BA1713 /* greenBox.png in Resources */,
+				8843F6691B362BD900794FC3 /* greyBG.png in Resources */,
 				8875D1EC1B30F46600B60105 /* coin.png in Resources */,
 				8875D1CB1B30F15A00B60105 /* Main.storyboard in Resources */,
+				88ABFAF71B3791BD00F407CC /* PTSans.ttc in Resources */,
+				88F372851B3735C300BA1713 /* screenTwoTF.png in Resources */,
+				8843F66A1B362BD900794FC3 /* coinBag3.png in Resources */,
 				8875D1D01B30F15A00B60105 /* LaunchScreen.xib in Resources */,
 				88BB63E81B3505BB00EBC6AD /* coinBag2.png in Resources */,
+				8843F66B1B362BD900794FC3 /* smallButton.png in Resources */,
+				8843F6681B362BD900794FC3 /* blueButton.png in Resources */,
+				88F372881B37369400BA1713 /* screenTwoWTF.png in Resources */,
 				88BB63EA1B35076300EBC6AD /* button2.png in Resources */,
+				88F372861B3735C300BA1713 /* screenTwoBG.png in Resources */,
 				8875D1CD1B30F15A00B60105 /* Images.xcassets in Resources */,
 				882378281B33B585005D4868 /* pButton.png in Resources */,
+				88F372841B3735C300BA1713 /* screenTwoButton.png in Resources */,
 				88BB63EE1B3507F800EBC6AD /* darkBG.png in Resources */,
 				8823782A1B33B585005D4868 /* cashOut.png in Resources */,
+				88F372831B3735C300BA1713 /* screenTwoGreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,8 +304,12 @@
 			files = (
 				8875D1C81B30F15A00B60105 /* ViewController.swift in Sources */,
 				8875D1C61B30F15A00B60105 /* AppDelegate.swift in Sources */,
+				88ABFAFD1B37A59C00F407CC /* KaedeTextField.swift in Sources */,
 				88BB63F41B35E65700EBC6AD /* ProgressViewTwo.swift in Sources */,
+				88ABFAFB1B37A1E000F407CC /* TextFieldsEffects.swift in Sources */,
+				88F3728C1B378D8300BA1713 /* DetailController.swift in Sources */,
 				88BB63F21B35C8E000EBC6AD /* ProgressView.swift in Sources */,
+				88ABFAF91B37A1BE00F407CC /* YokoTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
