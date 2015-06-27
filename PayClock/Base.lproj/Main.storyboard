@@ -63,7 +63,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hh4-kT-CUx">
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hh4-kT-CUx">
                                         <rect key="frame" x="136" y="430" width="112" height="61"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="61" id="Dbs-QW-RRJ"/>
@@ -217,7 +217,7 @@
                                         <rect key="frame" x="1" y="0.0" width="318" height="481"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbG-xA-2kF">
-                                        <rect key="frame" x="50" y="252" width="98" height="41"/>
+                                        <rect key="frame" x="37" y="252" width="98" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="98" id="CIf-gR-UyC"/>
                                             <constraint firstAttribute="height" constant="41" id="Q4v-Tf-xok"/>
@@ -233,23 +233,6 @@
                                     </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tax rate" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-xX-QFe" customClass="YokoTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="170" y="29" width="123" height="56"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pay rate" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Fc-CX-aRA" customClass="YokoTextField" customModule="PayRate" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="29" width="123" height="56"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="IRX-hd-dm2"/>
-                                        </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -322,7 +305,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am8-ld-cqR">
-                                        <rect key="frame" x="170" y="252" width="98" height="41"/>
+                                        <rect key="frame" x="182" y="252" width="98" height="41"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="21"/>
                                         <state key="normal" title="Save" backgroundImage="screenTwoButton.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -332,10 +315,27 @@
                                             <action selector="saveClicked:" destination="Kt9-2q-pgP" eventType="touchUpInside" id="3kM-FR-l8b"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pay rate" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Fc-CX-aRA" customClass="YokoTextField" customModule="PayRate" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="29" width="123" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="IRX-hd-dm2"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
+                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="leading" secondItem="am8-ld-cqR" secondAttribute="leading" id="5FL-ZP-7uX"/>
+                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="leading" secondItem="am8-ld-cqR" secondAttribute="leading" constant="-12" id="5FL-ZP-7uX"/>
                                     <constraint firstItem="2Fc-CX-aRA" firstAttribute="leading" secondItem="ec3-Vr-vLw" secondAttribute="leading" id="7Du-Nh-W7B"/>
                                     <constraint firstAttribute="trailing" secondItem="lFY-BQ-cHs" secondAttribute="trailing" constant="-1" id="9Re-Wj-PCW"/>
                                     <constraint firstItem="xbG-xA-2kF" firstAttribute="top" secondItem="3gF-57-Jwq" secondAttribute="bottom" constant="24" id="Cfh-2C-t5S"/>
@@ -343,10 +343,10 @@
                                     <constraint firstAttribute="bottom" secondItem="xbG-xA-2kF" secondAttribute="bottom" constant="188" id="Evk-GX-4cb"/>
                                     <constraint firstAttribute="trailing" secondItem="ajs-xX-QFe" secondAttribute="trailing" constant="25" id="GE9-lL-1x9"/>
                                     <constraint firstItem="xbG-xA-2kF" firstAttribute="top" secondItem="am8-ld-cqR" secondAttribute="top" id="Gcu-VK-Lyx"/>
-                                    <constraint firstAttribute="trailing" secondItem="am8-ld-cqR" secondAttribute="trailing" constant="50" id="IPo-N2-ffC"/>
+                                    <constraint firstAttribute="trailing" secondItem="am8-ld-cqR" secondAttribute="trailing" constant="38" id="IPo-N2-ffC"/>
                                     <constraint firstItem="Exp-gF-tdj" firstAttribute="trailing" secondItem="ajs-xX-QFe" secondAttribute="trailing" id="K1E-bm-AbS"/>
                                     <constraint firstItem="3gF-57-Jwq" firstAttribute="top" secondItem="ec3-Vr-vLw" secondAttribute="bottom" constant="17" id="QDf-K8-Pxc"/>
-                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="trailing" secondItem="3gF-57-Jwq" secondAttribute="trailing" id="Rz3-JE-WpW"/>
+                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="trailing" secondItem="3gF-57-Jwq" secondAttribute="trailing" constant="-13" id="Rz3-JE-WpW"/>
                                     <constraint firstItem="2Fc-CX-aRA" firstAttribute="bottom" secondItem="ajs-xX-QFe" secondAttribute="bottom" id="Tp8-ah-AY1"/>
                                     <constraint firstItem="ec3-Vr-vLw" firstAttribute="leading" secondItem="3gF-57-Jwq" secondAttribute="leading" id="UhD-iu-pxI"/>
                                     <constraint firstItem="Exp-gF-tdj" firstAttribute="baseline" secondItem="ec3-Vr-vLw" secondAttribute="baseline" id="W9a-dR-cjB"/>
@@ -362,7 +362,7 @@
                                     <constraint firstItem="lFY-BQ-cHs" firstAttribute="bottom" secondItem="TLV-K9-fQO" secondAttribute="bottomMargin" constant="8" id="hVq-7O-9oa"/>
                                     <constraint firstItem="ec3-Vr-vLw" firstAttribute="trailing" secondItem="3gF-57-Jwq" secondAttribute="trailing" id="hls-kf-SgC"/>
                                     <constraint firstItem="xbG-xA-2kF" firstAttribute="baseline" secondItem="am8-ld-cqR" secondAttribute="firstBaseline" id="iG2-85-T6D"/>
-                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="50" id="iqz-oa-RJG"/>
+                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="37" id="iqz-oa-RJG"/>
                                     <constraint firstItem="2Fc-CX-aRA" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="25" id="pmp-5v-8is"/>
                                     <constraint firstItem="Exp-gF-tdj" firstAttribute="leading" secondItem="HVG-GP-sYu" secondAttribute="leading" id="sVl-i0-onM"/>
                                     <constraint firstItem="lFY-BQ-cHs" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="1" id="t9p-bw-UTx"/>

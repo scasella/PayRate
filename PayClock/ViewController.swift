@@ -41,8 +41,8 @@ class ViewController: UIViewController {
         progressView.animateProgressView()
         progressViewTwo.animateProgressView()
         cashOutbutton.hidden = true
-        coinBag.hidden = false
-        coinBagLabel.hidden = false
+        //coinBag.hidden = false
+        //coinBagLabel.hidden = false
         } else {
             toggleTimer = false
             coinBag.hidden = true
