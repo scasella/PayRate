@@ -11,15 +11,15 @@
             <string>PTSans-Regular</string>
             <string>PTSans-Regular</string>
             <string>PTSans-Regular</string>
-            <string>PTSans-Regular</string>
-            <string>PTSans-Regular</string>
-            <string>PTSans-Regular</string>
-            <string>PTSans-Regular</string>
-            <string>PTSans-Regular</string>
-            <string>PTSans-Regular</string>
-            <string>PTSans-Regular</string>
-            <string>PTSans-Regular</string>
             <string>PTSans-Bold</string>
+            <string>PTSans-Regular</string>
+            <string>PTSans-Regular</string>
+            <string>PTSans-Regular</string>
+            <string>PTSans-Regular</string>
+            <string>PTSans-Regular</string>
+            <string>PTSans-Regular</string>
+            <string>PTSans-Regular</string>
+            <string>PTSans-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -47,6 +47,9 @@
                             <view autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZX-tG-XQb" customClass="ProgressView" customModule="PayRate" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="79" width="375" height="533"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBGThree.png" translatesAutoresizingMaskIntoConstraints="NO" id="h5m-0N-UuM">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="533"/>
+                                    </imageView>
                                     <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coinBagThree.png" translatesAutoresizingMaskIntoConstraints="NO" id="yLY-GH-yvf">
                                         <rect key="frame" x="107" y="405" width="170" height="101"/>
                                         <constraints>
@@ -127,11 +130,11 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PayRate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhS-qP-KWE">
-                                <rect key="frame" x="0.0" y="28" width="375" height="43"/>
+                                <rect key="frame" x="0.0" y="29" width="375" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="dik-Xs-WES"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -146,7 +149,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIl-Bd-Veg">
-                                <rect key="frame" x="137" y="623" width="100" height="30"/>
+                                <rect key="frame" x="137" y="624" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JyF-sX-5er"/>
                                     <constraint firstAttribute="width" constant="100" id="W50-ut-lCe"/>
@@ -163,8 +166,8 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="iIl-Bd-Veg" firstAttribute="centerX" secondItem="4l8-7k-Z7c" secondAttribute="centerX" id="0YT-gT-eBG"/>
-                            <constraint firstItem="bhS-qP-KWE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="3QR-95-TYT"/>
-                            <constraint firstItem="sZX-tG-XQb" firstAttribute="top" secondItem="bhS-qP-KWE" secondAttribute="bottom" constant="8" symbolic="YES" id="6d6-09-qZe"/>
+                            <constraint firstItem="bhS-qP-KWE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="9" id="3QR-95-TYT"/>
+                            <constraint firstItem="sZX-tG-XQb" firstAttribute="top" secondItem="bhS-qP-KWE" secondAttribute="bottom" constant="7" id="6d6-09-qZe"/>
                             <constraint firstItem="sZX-tG-XQb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7Ji-fo-EAE"/>
                             <constraint firstItem="sZX-tG-XQb" firstAttribute="leading" secondItem="d75-Ej-Hh3" secondAttribute="leading" id="AdG-bW-MLH"/>
                             <constraint firstItem="bhS-qP-KWE" firstAttribute="leading" secondItem="sZX-tG-XQb" secondAttribute="leading" id="Fvl-T1-mzl"/>
@@ -172,11 +175,11 @@
                             <constraint firstItem="4l8-7k-Z7c" firstAttribute="trailing" secondItem="sZX-tG-XQb" secondAttribute="trailing" id="HRV-8Q-3Ls"/>
                             <constraint firstItem="iIl-Bd-Veg" firstAttribute="centerY" secondItem="4l8-7k-Z7c" secondAttribute="centerY" id="M5b-mP-OhL"/>
                             <constraint firstItem="d75-Ej-Hh3" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="OuA-Tn-IAa"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iIl-Bd-Veg" secondAttribute="bottom" constant="14" id="RLq-B0-506"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="iIl-Bd-Veg" secondAttribute="bottom" constant="13" id="RLq-B0-506"/>
                             <constraint firstItem="sZX-tG-XQb" firstAttribute="top" secondItem="m90-Th-4Pl" secondAttribute="bottom" id="SGG-Bf-4v2"/>
                             <constraint firstItem="4l8-7k-Z7c" firstAttribute="trailing" secondItem="d75-Ej-Hh3" secondAttribute="trailing" id="Z5a-sC-MRt"/>
                             <constraint firstAttribute="trailing" secondItem="bhS-qP-KWE" secondAttribute="trailing" id="bui-ug-tb5"/>
-                            <constraint firstItem="iIl-Bd-Veg" firstAttribute="top" secondItem="sZX-tG-XQb" secondAttribute="bottom" constant="11" id="fQW-XP-aPE"/>
+                            <constraint firstItem="iIl-Bd-Veg" firstAttribute="top" secondItem="sZX-tG-XQb" secondAttribute="bottom" constant="12" id="fQW-XP-aPE"/>
                             <constraint firstItem="m90-Th-4Pl" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="gyv-RU-UyC"/>
                             <constraint firstItem="4l8-7k-Z7c" firstAttribute="leading" secondItem="d75-Ej-Hh3" secondAttribute="leading" id="hGZ-xC-Xge"/>
                             <constraint firstItem="4l8-7k-Z7c" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="jM1-Bt-f3a"/>
@@ -211,19 +214,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLV-K9-fQO">
-                                <rect key="frame" x="28" y="135" width="318" height="481"/>
+                                <rect key="frame" x="28" y="86" width="318" height="311"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenBox.png" translatesAutoresizingMaskIntoConstraints="NO" id="lFY-BQ-cHs">
-                                        <rect key="frame" x="1" y="0.0" width="318" height="481"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settingsCard.png" translatesAutoresizingMaskIntoConstraints="NO" id="lFY-BQ-cHs">
+                                        <rect key="frame" x="8" y="8" width="310" height="303"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbG-xA-2kF">
-                                        <rect key="frame" x="37" y="252" width="98" height="41"/>
+                                        <rect key="frame" x="50" y="245" width="98" height="41"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="98" id="CIf-gR-UyC"/>
-                                            <constraint firstAttribute="height" constant="41" id="Q4v-Tf-xok"/>
+                                            <constraint firstAttribute="width" constant="98" id="Qyk-0h-nLv"/>
+                                            <constraint firstAttribute="height" constant="41" id="px6-47-4OH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="21"/>
-                                        <state key="normal" title="Back" backgroundImage="screenTwoButton.png">
+                                        <state key="normal" title="Back" backgroundImage="setOranButton.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -231,83 +234,98 @@
                                             <segue destination="vXZ-lx-hvc" kind="presentation" identifier="backToMain" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="g79-Ky-LfI"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tax rate" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-xX-QFe" customClass="YokoTextField" customModule="PayRate" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tax rate" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-xX-QFe" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="170" y="29" width="123" height="56"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.090196078431372548" green="0.69803921568627447" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.93333333333333335" green="0.45882352941176469" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Inner Circle ($)" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ec3-Vr-vLw" customClass="YokoTextField" customModule="PayRate" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Inner circle ($)" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ec3-Vr-vLw" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="25" y="99" width="123" height="56"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="Cw4-sm-FbV"/>
+                                            <constraint firstAttribute="height" constant="56" id="jlW-ub-JjD"/>
                                         </constraints>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.090196078431372548" green="0.69803921568627447" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.93333333333333335" green="0.45882352941176469" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Outer Circle ($)" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Exp-gF-tdj" customClass="YokoTextField" customModule="PayRate" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Outer circle ($)" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Exp-gF-tdj" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="170" y="99" width="123" height="56"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.090196078431372548" green="0.69803921568627447" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.93333333333333335" green="0.45882352941176469" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Adjust time" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="3gF-57-Jwq" customClass="YokoTextField" customModule="PayRate" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Adjust time" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="3gF-57-Jwq" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="25" y="172" width="123" height="56"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.090196078431372548" green="0.69803921568627447" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.93333333333333335" green="0.45882352941176469" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Adjust earnings" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HVG-GP-sYu" customClass="YokoTextField" customModule="PayRate" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Adjust earnings" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HVG-GP-sYu" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="170" y="172" width="123" height="56"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.090196078431372548" green="0.69803921568627447" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.93333333333333335" green="0.45882352941176469" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am8-ld-cqR">
-                                        <rect key="frame" x="182" y="252" width="98" height="41"/>
+                                        <rect key="frame" x="170" y="245" width="98" height="41"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="21"/>
-                                        <state key="normal" title="Save" backgroundImage="screenTwoButton.png">
+                                        <state key="normal" title="Save" backgroundImage="setbButton.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -315,86 +333,91 @@
                                             <action selector="saveClicked:" destination="Kt9-2q-pgP" eventType="touchUpInside" id="3kM-FR-l8b"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pay rate" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Fc-CX-aRA" customClass="YokoTextField" customModule="PayRate" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pay rate" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Fc-CX-aRA" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="25" y="29" width="123" height="56"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="IRX-hd-dm2"/>
+                                            <constraint firstAttribute="height" constant="56" id="mYf-cO-5qo"/>
                                         </constraints>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.090196078431372548" green="0.69803921568627447" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="foregroundColor">
-                                                <color key="value" red="0.16862745100000001" green="0.69411764710000001" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.93333333333333335" green="0.45882352941176469" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="leading" secondItem="am8-ld-cqR" secondAttribute="leading" constant="-12" id="5FL-ZP-7uX"/>
-                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="leading" secondItem="ec3-Vr-vLw" secondAttribute="leading" id="7Du-Nh-W7B"/>
-                                    <constraint firstAttribute="trailing" secondItem="lFY-BQ-cHs" secondAttribute="trailing" constant="-1" id="9Re-Wj-PCW"/>
-                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="top" secondItem="3gF-57-Jwq" secondAttribute="bottom" constant="24" id="Cfh-2C-t5S"/>
-                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="bottom" secondItem="Exp-gF-tdj" secondAttribute="bottom" id="DKe-bN-KO0"/>
-                                    <constraint firstAttribute="bottom" secondItem="xbG-xA-2kF" secondAttribute="bottom" constant="188" id="Evk-GX-4cb"/>
-                                    <constraint firstAttribute="trailing" secondItem="ajs-xX-QFe" secondAttribute="trailing" constant="25" id="GE9-lL-1x9"/>
-                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="top" secondItem="am8-ld-cqR" secondAttribute="top" id="Gcu-VK-Lyx"/>
-                                    <constraint firstAttribute="trailing" secondItem="am8-ld-cqR" secondAttribute="trailing" constant="38" id="IPo-N2-ffC"/>
-                                    <constraint firstItem="Exp-gF-tdj" firstAttribute="trailing" secondItem="ajs-xX-QFe" secondAttribute="trailing" id="K1E-bm-AbS"/>
-                                    <constraint firstItem="3gF-57-Jwq" firstAttribute="top" secondItem="ec3-Vr-vLw" secondAttribute="bottom" constant="17" id="QDf-K8-Pxc"/>
-                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="trailing" secondItem="3gF-57-Jwq" secondAttribute="trailing" constant="-13" id="Rz3-JE-WpW"/>
-                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="bottom" secondItem="ajs-xX-QFe" secondAttribute="bottom" id="Tp8-ah-AY1"/>
-                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="leading" secondItem="3gF-57-Jwq" secondAttribute="leading" id="UhD-iu-pxI"/>
-                                    <constraint firstItem="Exp-gF-tdj" firstAttribute="baseline" secondItem="ec3-Vr-vLw" secondAttribute="baseline" id="W9a-dR-cjB"/>
-                                    <constraint firstItem="lFY-BQ-cHs" firstAttribute="top" secondItem="TLV-K9-fQO" secondAttribute="top" id="WDg-2e-Lla"/>
-                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="trailing" secondItem="ec3-Vr-vLw" secondAttribute="trailing" id="bbc-Zv-aDz"/>
-                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="leading" secondItem="Exp-gF-tdj" secondAttribute="leading" id="c8V-py-Fel"/>
-                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="top" secondItem="TLV-K9-fQO" secondAttribute="top" constant="29" id="cc0-kD-aIw"/>
-                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="leading" secondItem="2Fc-CX-aRA" secondAttribute="trailing" constant="22" id="ciI-dr-rXY"/>
-                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="baseline" secondItem="ajs-xX-QFe" secondAttribute="baseline" id="drf-Km-ESv"/>
-                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="baseline" secondItem="3gF-57-Jwq" secondAttribute="baseline" id="fEE-dp-4Dg"/>
-                                    <constraint firstItem="3gF-57-Jwq" firstAttribute="bottom" secondItem="HVG-GP-sYu" secondAttribute="bottom" id="fWg-u5-G9S"/>
-                                    <constraint firstItem="am8-ld-cqR" firstAttribute="baseline" secondItem="xbG-xA-2kF" secondAttribute="firstBaseline" id="gYN-3P-wJo"/>
-                                    <constraint firstItem="lFY-BQ-cHs" firstAttribute="bottom" secondItem="TLV-K9-fQO" secondAttribute="bottomMargin" constant="8" id="hVq-7O-9oa"/>
-                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="trailing" secondItem="3gF-57-Jwq" secondAttribute="trailing" id="hls-kf-SgC"/>
-                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="baseline" secondItem="am8-ld-cqR" secondAttribute="firstBaseline" id="iG2-85-T6D"/>
-                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="37" id="iqz-oa-RJG"/>
-                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="25" id="pmp-5v-8is"/>
-                                    <constraint firstItem="Exp-gF-tdj" firstAttribute="leading" secondItem="HVG-GP-sYu" secondAttribute="leading" id="sVl-i0-onM"/>
-                                    <constraint firstItem="lFY-BQ-cHs" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="1" id="t9p-bw-UTx"/>
-                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="top" secondItem="2Fc-CX-aRA" secondAttribute="bottom" constant="14" id="zbk-yO-cFQ"/>
-                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="trailing" secondItem="Exp-gF-tdj" secondAttribute="trailing" id="zmL-zR-G77"/>
+                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="top" secondItem="TLV-K9-fQO" secondAttribute="top" constant="29" id="0Fr-N2-f3F"/>
+                                    <constraint firstAttribute="trailing" secondItem="ajs-xX-QFe" secondAttribute="trailing" constant="25" id="0Xd-sj-sgq"/>
+                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="top" secondItem="2Fc-CX-aRA" secondAttribute="bottom" constant="14" id="1Oj-kZ-CFE"/>
+                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="leading" secondItem="2Fc-CX-aRA" secondAttribute="leading" id="1k1-8A-Idn"/>
+                                    <constraint firstItem="Exp-gF-tdj" firstAttribute="baseline" secondItem="ec3-Vr-vLw" secondAttribute="baseline" id="2qR-Jx-H9u"/>
+                                    <constraint firstItem="3gF-57-Jwq" firstAttribute="trailing" secondItem="ec3-Vr-vLw" secondAttribute="trailing" id="3Id-o3-EI7"/>
+                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="trailing" secondItem="2Fc-CX-aRA" secondAttribute="trailing" id="3xj-k7-TTq"/>
+                                    <constraint firstAttribute="bottom" secondItem="lFY-BQ-cHs" secondAttribute="bottom" id="4el-XZ-gwc"/>
+                                    <constraint firstItem="3gF-57-Jwq" firstAttribute="top" secondItem="ec3-Vr-vLw" secondAttribute="bottom" constant="17" id="5ID-zg-4tt"/>
+                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="leading" secondItem="Exp-gF-tdj" secondAttribute="leading" id="5SA-BR-ReV"/>
+                                    <constraint firstAttribute="trailing" secondItem="lFY-BQ-cHs" secondAttribute="trailing" id="7ea-D0-xKV"/>
+                                    <constraint firstItem="Exp-gF-tdj" firstAttribute="trailing" secondItem="HVG-GP-sYu" secondAttribute="trailing" id="7f1-w9-wKe"/>
+                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="baseline" secondItem="ajs-xX-QFe" secondAttribute="baseline" id="93I-kc-y1l"/>
+                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="baseline" secondItem="3gF-57-Jwq" secondAttribute="baseline" id="A3v-fu-0rP"/>
+                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="top" secondItem="am8-ld-cqR" secondAttribute="top" id="Exx-Xo-SmN"/>
+                                    <constraint firstItem="3gF-57-Jwq" firstAttribute="trailing" secondItem="xbG-xA-2kF" secondAttribute="trailing" id="G5A-gi-Vcu"/>
+                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="25" id="LsG-Pc-F02"/>
+                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="bottom" secondItem="2Fc-CX-aRA" secondAttribute="bottom" id="R8V-iT-W07"/>
+                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="trailing" secondItem="Exp-gF-tdj" secondAttribute="trailing" id="UNU-v1-3Kz"/>
+                                    <constraint firstItem="3gF-57-Jwq" firstAttribute="bottom" secondItem="HVG-GP-sYu" secondAttribute="bottom" id="XGS-DR-afL"/>
+                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="leading" secondItem="Exp-gF-tdj" secondAttribute="leading" id="Yat-Iu-6Df"/>
+                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="leading" secondItem="3gF-57-Jwq" secondAttribute="leading" id="YeX-AW-MXZ"/>
+                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="50" id="ZIX-yB-rf5"/>
+                                    <constraint firstAttribute="trailing" secondItem="am8-ld-cqR" secondAttribute="trailing" constant="50" id="ZTV-RD-WGA"/>
+                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="top" secondItem="3gF-57-Jwq" secondAttribute="bottom" constant="17" id="dxk-vi-JaF"/>
+                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="leading" secondItem="am8-ld-cqR" secondAttribute="leading" id="hzB-iD-jxH"/>
+                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="baseline" secondItem="am8-ld-cqR" secondAttribute="firstBaseline" id="iYV-En-K3S"/>
+                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="bottom" secondItem="Exp-gF-tdj" secondAttribute="bottom" id="jV7-0v-zA0"/>
+                                    <constraint firstItem="am8-ld-cqR" firstAttribute="baseline" secondItem="xbG-xA-2kF" secondAttribute="firstBaseline" id="spV-V4-scs"/>
+                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="leading" secondItem="2Fc-CX-aRA" secondAttribute="trailing" constant="22" id="twU-ld-4hw"/>
+                                    <constraint firstAttribute="bottom" secondItem="xbG-xA-2kF" secondAttribute="bottom" constant="25" id="uY7-hE-dG7"/>
+                                    <constraint firstItem="lFY-BQ-cHs" firstAttribute="top" secondItem="TLV-K9-fQO" secondAttribute="topMargin" id="uzR-8f-I3v"/>
+                                    <constraint firstItem="lFY-BQ-cHs" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leadingMargin" id="yh7-wU-ZLx"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TLV-K9-fQO" firstAttribute="leading" secondItem="Ojy-zh-5fs" secondAttribute="leadingMargin" constant="12" id="RDD-GP-p3r"/>
-                            <constraint firstItem="vcj-Cl-Hpr" firstAttribute="top" secondItem="TLV-K9-fQO" secondAttribute="bottom" constant="51" id="ZrU-le-Lkh"/>
-                            <constraint firstItem="TLV-K9-fQO" firstAttribute="top" secondItem="7sg-bf-b5U" secondAttribute="bottom" constant="115" id="b8s-tq-Tp7"/>
-                            <constraint firstItem="TLV-K9-fQO" firstAttribute="centerX" secondItem="Ojy-zh-5fs" secondAttribute="centerX" id="eBO-FO-wAQ"/>
+                            <constraint firstItem="TLV-K9-fQO" firstAttribute="centerX" secondItem="Ojy-zh-5fs" secondAttribute="centerX" id="1dG-7Z-183"/>
+                            <constraint firstItem="TLV-K9-fQO" firstAttribute="top" secondItem="7sg-bf-b5U" secondAttribute="bottom" constant="66" id="Lca-XS-Mk3"/>
+                            <constraint firstItem="vcj-Cl-Hpr" firstAttribute="top" secondItem="TLV-K9-fQO" secondAttribute="bottom" constant="270" id="lRZ-BM-Sle"/>
+                            <constraint firstItem="TLV-K9-fQO" firstAttribute="leading" secondItem="Ojy-zh-5fs" secondAttribute="leadingMargin" constant="12" id="rqk-28-gVV"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="payRate" destination="2Fc-CX-aRA" id="u2J-1X-TLQ"/>
+                        <outlet property="payRate" destination="2Fc-CX-aRA" id="0pP-rL-Bym"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KsA-3p-f3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="423.5" y="1136.5"/>
+            <point key="canvasLocation" x="343.5" y="1979.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="buttonThree.png" width="579" height="567"/>
         <image name="coinBagThree.png" width="453" height="285"/>
         <image name="darkTabBar.png" width="1125" height="210"/>
-        <image name="greenBox.png" width="906" height="804"/>
-        <image name="screenTwoButton.png" width="315" height="135"/>
+        <image name="mainBGThree.png" width="1125" height="1815"/>
+        <image name="setOranButton.png" width="363" height="156"/>
+        <image name="setbButton.png" width="363" height="156"/>
+        <image name="settingsCard.png" width="906" height="1164"/>
         <image name="smallButton.png" width="471" height="153"/>
     </resources>
     <inferredMetricsTieBreakers>

@@ -11,7 +11,7 @@ import UIKit
 class DetailController: UIViewController {
     
     
-    @IBOutlet var payRate: YokoTextField!
+    @IBOutlet var payRate: MadokaTextField!
     
     @IBAction func saveClicked(sender: AnyObject) {
         
