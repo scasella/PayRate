@@ -7,12 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		882378281B33B585005D4868 /* pButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 882378251B33B585005D4868 /* pButton.png */; };
 		8823782A1B33B585005D4868 /* cashOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 882378271B33B585005D4868 /* cashOut.png */; };
-		8843F6681B362BD900794FC3 /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8843F6641B362BD900794FC3 /* blueButton.png */; };
-		8843F6691B362BD900794FC3 /* greyBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 8843F6651B362BD900794FC3 /* greyBG.png */; };
-		8843F66A1B362BD900794FC3 /* coinBag3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8843F6661B362BD900794FC3 /* coinBag3.png */; };
-		8843F66B1B362BD900794FC3 /* smallButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8843F6671B362BD900794FC3 /* smallButton.png */; };
 		8875D1C61B30F15A00B60105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1C51B30F15A00B60105 /* AppDelegate.swift */; };
 		8875D1C81B30F15A00B60105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1C71B30F15A00B60105 /* ViewController.swift */; };
 		8875D1CB1B30F15A00B60105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1C91B30F15A00B60105 /* Main.storyboard */; };
@@ -20,16 +15,12 @@
 		8875D1D01B30F15A00B60105 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1CE1B30F15A00B60105 /* LaunchScreen.xib */; };
 		8875D1DC1B30F15A00B60105 /* PayClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1DB1B30F15A00B60105 /* PayClockTests.swift */; };
 		8875D1EC1B30F46600B60105 /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1E51B30F46600B60105 /* coin.png */; };
+		888E63591B3F917A00969EEF /* coinBagFour.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E63581B3F917A00969EEF /* coinBagFour.png */; };
 		8898E3E71B3F350300EE3E76 /* buttonThree.png in Resources */ = {isa = PBXBuildFile; fileRef = 8898E3E61B3F350300EE3E76 /* buttonThree.png */; };
 		8898E3E91B3F353300EE3E76 /* darkTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8898E3E81B3F353300EE3E76 /* darkTabBar.png */; };
-		8898E3EB1B3F354800EE3E76 /* coinBagThree.png in Resources */ = {isa = PBXBuildFile; fileRef = 8898E3EA1B3F354800EE3E76 /* coinBagThree.png */; };
-		8898E3ED1B3F356200EE3E76 /* darkBGThree.png in Resources */ = {isa = PBXBuildFile; fileRef = 8898E3EC1B3F356200EE3E76 /* darkBGThree.png */; };
 		88ABFAF71B3791BD00F407CC /* PTSans.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 88ABFAF61B3791BD00F407CC /* PTSans.ttc */; };
 		88ABFAFB1B37A1E000F407CC /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABFAFA1B37A1E000F407CC /* TextFieldsEffects.swift */; };
-		88BB63E81B3505BB00EBC6AD /* coinBag2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63E71B3505BB00EBC6AD /* coinBag2.png */; };
-		88BB63EA1B35076300EBC6AD /* button2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63E91B35076300EBC6AD /* button2.png */; };
 		88BB63ED1B3507F800EBC6AD /* greenBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63EB1B3507F800EBC6AD /* greenBG.png */; };
-		88BB63EE1B3507F800EBC6AD /* darkBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63EC1B3507F800EBC6AD /* darkBG.png */; };
 		88BB63F21B35C8E000EBC6AD /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB63F11B35C8E000EBC6AD /* ProgressView.swift */; };
 		88BB63F41B35E65700EBC6AD /* ProgressViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB63F31B35E65700EBC6AD /* ProgressViewTwo.swift */; };
 		88C14A251B3F7E3200CC327A /* settingsCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C14A241B3F7E3200CC327A /* settingsCard.png */; };
@@ -37,12 +28,8 @@
 		88C14A291B3F804800CC327A /* setOranButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C14A271B3F804800CC327A /* setOranButton.png */; };
 		88C14A2B1B3F81C900CC327A /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C14A2A1B3F81C900CC327A /* MadokaTextField.swift */; };
 		88C14A2D1B3F856E00CC327A /* mainBGThree.png in Resources */ = {isa = PBXBuildFile; fileRef = 88C14A2C1B3F856E00CC327A /* mainBGThree.png */; };
-		88F372831B3735C300BA1713 /* screenTwoGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F3727F1B3735C300BA1713 /* screenTwoGreen.png */; };
 		88F372841B3735C300BA1713 /* screenTwoButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F372801B3735C300BA1713 /* screenTwoButton.png */; };
-		88F372851B3735C300BA1713 /* screenTwoTF.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F372811B3735C300BA1713 /* screenTwoTF.png */; };
 		88F372861B3735C300BA1713 /* screenTwoBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F372821B3735C300BA1713 /* screenTwoBG.png */; };
-		88F372881B37369400BA1713 /* screenTwoWTF.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F372871B37369400BA1713 /* screenTwoWTF.png */; };
-		88F3728A1B376DBE00BA1713 /* greenBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F372891B376DBE00BA1713 /* greenBox.png */; };
 		88F3728C1B378D8300BA1713 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F3728B1B378D8300BA1713 /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,12 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		882378251B33B585005D4868 /* pButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pButton.png; sourceTree = "<group>"; };
 		882378271B33B585005D4868 /* cashOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cashOut.png; sourceTree = "<group>"; };
-		8843F6641B362BD900794FC3 /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
-		8843F6651B362BD900794FC3 /* greyBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greyBG.png; sourceTree = "<group>"; };
-		8843F6661B362BD900794FC3 /* coinBag3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinBag3.png; sourceTree = "<group>"; };
-		8843F6671B362BD900794FC3 /* smallButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallButton.png; sourceTree = "<group>"; };
 		8875D1C01B30F15A00B60105 /* PayRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8875D1C41B30F15A00B60105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8875D1C51B30F15A00B60105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,16 +56,12 @@
 		8875D1DA1B30F15A00B60105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8875D1DB1B30F15A00B60105 /* PayClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayClockTests.swift; sourceTree = "<group>"; };
 		8875D1E51B30F46600B60105 /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin.png; sourceTree = "<group>"; };
+		888E63581B3F917A00969EEF /* coinBagFour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinBagFour.png; sourceTree = "<group>"; };
 		8898E3E61B3F350300EE3E76 /* buttonThree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonThree.png; sourceTree = "<group>"; };
 		8898E3E81B3F353300EE3E76 /* darkTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkTabBar.png; sourceTree = "<group>"; };
-		8898E3EA1B3F354800EE3E76 /* coinBagThree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinBagThree.png; sourceTree = "<group>"; };
-		8898E3EC1B3F356200EE3E76 /* darkBGThree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkBGThree.png; sourceTree = "<group>"; };
 		88ABFAF61B3791BD00F407CC /* PTSans.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTSans.ttc; sourceTree = "<group>"; };
 		88ABFAFA1B37A1E000F407CC /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
-		88BB63E71B3505BB00EBC6AD /* coinBag2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinBag2.png; sourceTree = "<group>"; };
-		88BB63E91B35076300EBC6AD /* button2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button2.png; sourceTree = "<group>"; };
 		88BB63EB1B3507F800EBC6AD /* greenBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenBG.png; sourceTree = "<group>"; };
-		88BB63EC1B3507F800EBC6AD /* darkBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkBG.png; sourceTree = "<group>"; };
 		88BB63F11B35C8E000EBC6AD /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		88BB63F31B35E65700EBC6AD /* ProgressViewTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewTwo.swift; sourceTree = "<group>"; };
 		88C14A241B3F7E3200CC327A /* settingsCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingsCard.png; sourceTree = "<group>"; };
@@ -91,12 +69,8 @@
 		88C14A271B3F804800CC327A /* setOranButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setOranButton.png; sourceTree = "<group>"; };
 		88C14A2A1B3F81C900CC327A /* MadokaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
 		88C14A2C1B3F856E00CC327A /* mainBGThree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainBGThree.png; sourceTree = "<group>"; };
-		88F3727F1B3735C300BA1713 /* screenTwoGreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenTwoGreen.png; sourceTree = "<group>"; };
 		88F372801B3735C300BA1713 /* screenTwoButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenTwoButton.png; sourceTree = "<group>"; };
-		88F372811B3735C300BA1713 /* screenTwoTF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenTwoTF.png; sourceTree = "<group>"; };
 		88F372821B3735C300BA1713 /* screenTwoBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenTwoBG.png; sourceTree = "<group>"; };
-		88F372871B37369400BA1713 /* screenTwoWTF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenTwoWTF.png; sourceTree = "<group>"; };
-		88F372891B376DBE00BA1713 /* greenBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenBox.png; sourceTree = "<group>"; };
 		88F3728B1B378D8300BA1713 /* DetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,31 +113,18 @@
 		8875D1C21B30F15A00B60105 /* PayClock */ = {
 			isa = PBXGroup;
 			children = (
+				888E63581B3F917A00969EEF /* coinBagFour.png */,
 				88ABFAF61B3791BD00F407CC /* PTSans.ttc */,
 				88C14A2C1B3F856E00CC327A /* mainBGThree.png */,
 				88C14A261B3F804800CC327A /* setbButton.png */,
 				88C14A271B3F804800CC327A /* setOranButton.png */,
 				88C14A241B3F7E3200CC327A /* settingsCard.png */,
-				8898E3EC1B3F356200EE3E76 /* darkBGThree.png */,
-				8898E3EA1B3F354800EE3E76 /* coinBagThree.png */,
 				8898E3E81B3F353300EE3E76 /* darkTabBar.png */,
 				8898E3E61B3F350300EE3E76 /* buttonThree.png */,
 				8875D1E51B30F46600B60105 /* coin.png */,
-				88F372891B376DBE00BA1713 /* greenBox.png */,
-				88F372871B37369400BA1713 /* screenTwoWTF.png */,
-				88F3727F1B3735C300BA1713 /* screenTwoGreen.png */,
 				88F372801B3735C300BA1713 /* screenTwoButton.png */,
-				88F372811B3735C300BA1713 /* screenTwoTF.png */,
 				88F372821B3735C300BA1713 /* screenTwoBG.png */,
-				882378251B33B585005D4868 /* pButton.png */,
-				8843F6641B362BD900794FC3 /* blueButton.png */,
-				8843F6651B362BD900794FC3 /* greyBG.png */,
-				8843F6661B362BD900794FC3 /* coinBag3.png */,
-				8843F6671B362BD900794FC3 /* smallButton.png */,
-				88BB63E71B3505BB00EBC6AD /* coinBag2.png */,
-				88BB63E91B35076300EBC6AD /* button2.png */,
 				88BB63EB1B3507F800EBC6AD /* greenBG.png */,
-				88BB63EC1B3507F800EBC6AD /* darkBG.png */,
 				882378271B33B585005D4868 /* cashOut.png */,
 				88C14A2A1B3F81C900CC327A /* MadokaTextField.swift */,
 				88ABFAFA1B37A1E000F407CC /* TextFieldsEffects.swift */,
@@ -286,34 +247,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				88BB63ED1B3507F800EBC6AD /* greenBG.png in Resources */,
-				88F3728A1B376DBE00BA1713 /* greenBox.png in Resources */,
-				8843F6691B362BD900794FC3 /* greyBG.png in Resources */,
+				888E63591B3F917A00969EEF /* coinBagFour.png in Resources */,
 				88C14A281B3F804800CC327A /* setbButton.png in Resources */,
 				8875D1EC1B30F46600B60105 /* coin.png in Resources */,
 				8875D1CB1B30F15A00B60105 /* Main.storyboard in Resources */,
 				88ABFAF71B3791BD00F407CC /* PTSans.ttc in Resources */,
-				8898E3EB1B3F354800EE3E76 /* coinBagThree.png in Resources */,
 				88C14A291B3F804800CC327A /* setOranButton.png in Resources */,
-				88F372851B3735C300BA1713 /* screenTwoTF.png in Resources */,
-				8898E3ED1B3F356200EE3E76 /* darkBGThree.png in Resources */,
-				8843F66A1B362BD900794FC3 /* coinBag3.png in Resources */,
 				8875D1D01B30F15A00B60105 /* LaunchScreen.xib in Resources */,
-				88BB63E81B3505BB00EBC6AD /* coinBag2.png in Resources */,
 				88C14A251B3F7E3200CC327A /* settingsCard.png in Resources */,
 				8898E3E71B3F350300EE3E76 /* buttonThree.png in Resources */,
-				8843F66B1B362BD900794FC3 /* smallButton.png in Resources */,
-				8843F6681B362BD900794FC3 /* blueButton.png in Resources */,
-				88F372881B37369400BA1713 /* screenTwoWTF.png in Resources */,
 				8898E3E91B3F353300EE3E76 /* darkTabBar.png in Resources */,
-				88BB63EA1B35076300EBC6AD /* button2.png in Resources */,
 				88F372861B3735C300BA1713 /* screenTwoBG.png in Resources */,
 				8875D1CD1B30F15A00B60105 /* Images.xcassets in Resources */,
-				882378281B33B585005D4868 /* pButton.png in Resources */,
 				88F372841B3735C300BA1713 /* screenTwoButton.png in Resources */,
-				88BB63EE1B3507F800EBC6AD /* darkBG.png in Resources */,
 				88C14A2D1B3F856E00CC327A /* mainBGThree.png in Resources */,
 				8823782A1B33B585005D4868 /* cashOut.png in Resources */,
-				88F372831B3735C300BA1713 /* screenTwoGreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

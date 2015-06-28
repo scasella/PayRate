@@ -86,7 +86,8 @@ class ProgressViewTwo: UIView {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.fromValue = CGFloat(0.0)
         animation.toValue = CGFloat(1.0)
-        animation.duration = 1.0
+        animation.duration = 10 / secondRate
+        animation.repeatCount = 100000
         animation.delegate = self
         animation.removedOnCompletion = false
         animation.additive = true

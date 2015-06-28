@@ -9,8 +9,7 @@
 import UIKit
 import QuartzCore
 
-var hourlyRate: Double = 0.00
-var secondRate = hourlyRate / 60 / 60
+var secondRate = settingsDict["PayRate"]! / 60 / 60
 
 class ViewController: UIViewController {
     
@@ -54,12 +53,12 @@ class ViewController: UIViewController {
     
     
     
-    
     override func viewDidLoad() {
 
            }
     
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -77,8 +76,5 @@ class ViewController: UIViewController {
     func subtractTime() {
         seconds++
         blueLabel.text = "$\(Double(round(secondRate * seconds * 100)/100))"}
-    
-    
-  
 }
 

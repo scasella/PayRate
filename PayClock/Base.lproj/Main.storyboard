@@ -50,7 +50,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBGThree.png" translatesAutoresizingMaskIntoConstraints="NO" id="h5m-0N-UuM">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="533"/>
                                     </imageView>
-                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coinBagThree.png" translatesAutoresizingMaskIntoConstraints="NO" id="yLY-GH-yvf">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coinBagFour.png" translatesAutoresizingMaskIntoConstraints="NO" id="yLY-GH-yvf">
                                         <rect key="frame" x="107" y="405" width="170" height="101"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="101" id="MsB-6X-YeX"/>
@@ -250,6 +250,9 @@
                                                 <color key="value" red="0.93333333333333335" green="0.45882352941176469" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="taxEdit:" destination="Kt9-2q-pgP" eventType="editingDidBegin" id="1bG-8d-OZP"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Inner circle ($)" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ec3-Vr-vLw" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="25" y="99" width="123" height="56"/>
@@ -270,6 +273,9 @@
                                                 <color key="value" red="0.93333333333333335" green="0.45882352941176469" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="innerEdit:" destination="Kt9-2q-pgP" eventType="editingDidBegin" id="H4c-KE-UXi"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Outer circle ($)" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Exp-gF-tdj" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="170" y="99" width="123" height="56"/>
@@ -287,6 +293,9 @@
                                                 <color key="value" red="0.93333333333333335" green="0.45882352941176469" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="outerEdit:" destination="Kt9-2q-pgP" eventType="editingDidBegin" id="29S-Bu-8AC"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Adjust time" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="3gF-57-Jwq" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="25" y="172" width="123" height="56"/>
@@ -304,6 +313,9 @@
                                                 <color key="value" red="0.93333333333333335" green="0.45882352941176469" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="timeEdit:" destination="Kt9-2q-pgP" eventType="editingDidBegin" id="82Z-5v-9F5"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Adjust earnings" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HVG-GP-sYu" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="170" y="172" width="123" height="56"/>
@@ -321,6 +333,9 @@
                                                 <color key="value" red="0.93333333333333335" green="0.45882352941176469" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="payTouch:" destination="Kt9-2q-pgP" eventType="editingDidBegin" id="ta8-GA-ogV"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am8-ld-cqR">
                                         <rect key="frame" x="170" y="245" width="98" height="41"/>
@@ -352,6 +367,9 @@
                                                 <color key="value" red="0.93333333333333335" green="0.45882352941176469" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="payEdit:" destination="Kt9-2q-pgP" eventType="editingDidBegin" id="zfT-hn-42s"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -402,17 +420,22 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="payRate" destination="2Fc-CX-aRA" id="0pP-rL-Bym"/>
+                        <outlet property="adjustPayField" destination="HVG-GP-sYu" id="9gg-UV-mzf"/>
+                        <outlet property="adjustTimeField" destination="3gF-57-Jwq" id="Pgx-ey-mmg"/>
+                        <outlet property="innerField" destination="ec3-Vr-vLw" id="qZd-ha-7VG"/>
+                        <outlet property="outerField" destination="Exp-gF-tdj" id="LFS-93-PEd"/>
+                        <outlet property="payField" destination="2Fc-CX-aRA" id="n60-ZU-KvD"/>
+                        <outlet property="taxField" destination="ajs-xX-QFe" id="au9-Qf-amI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KsA-3p-f3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343.5" y="1979.5"/>
+            <point key="canvasLocation" x="146.5" y="1095.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="buttonThree.png" width="579" height="567"/>
-        <image name="coinBagThree.png" width="453" height="285"/>
+        <image name="coinBagFour.png" width="453" height="285"/>
         <image name="darkTabBar.png" width="1125" height="210"/>
         <image name="mainBGThree.png" width="1125" height="1815"/>
         <image name="setOranButton.png" width="363" height="156"/>
