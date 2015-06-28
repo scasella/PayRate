@@ -86,8 +86,8 @@ class ProgressView: UIView {
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         animation.fromValue = CGFloat(0.0)
         animation.toValue = CGFloat(1.0)
-        animation.duration = 1 / secondRate
-        animation.repeatCount = 10000000
+        animation.duration = settingsDict["InnerCircle"]! / secondRate
+        animation.repeatCount = Float.infinity
         animation.delegate = self
         animation.removedOnCompletion = false
         animation.additive = true

@@ -222,8 +222,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbG-xA-2kF">
                                         <rect key="frame" x="50" y="245" width="98" height="41"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="98" id="Qyk-0h-nLv"/>
-                                            <constraint firstAttribute="height" constant="41" id="px6-47-4OH"/>
+                                            <constraint firstAttribute="height" constant="41" id="ccS-rs-OZk"/>
+                                            <constraint firstAttribute="width" constant="98" id="uVP-za-Rbo"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="21"/>
                                         <state key="normal" title="Back" backgroundImage="setOranButton.png">
@@ -234,11 +234,14 @@
                                             <segue destination="vXZ-lx-hvc" kind="presentation" identifier="backToMain" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="g79-Ky-LfI"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tax rate" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-xX-QFe" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
+                                    <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tax rate" adjustsFontSizeToFit="NO" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ajs-xX-QFe" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="170" y="29" width="123" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="9kZ-54-20f"/>
+                                        </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                                 <color key="value" red="0.090196078431372548" green="0.69803921568627447" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
@@ -254,14 +257,14 @@
                                             <action selector="taxEdit:" destination="Kt9-2q-pgP" eventType="editingDidBegin" id="1bG-8d-OZP"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Inner circle ($)" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ec3-Vr-vLw" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
+                                    <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Inner circle ($)" adjustsFontSizeToFit="NO" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ec3-Vr-vLw" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="25" y="99" width="123" height="56"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="jlW-ub-JjD"/>
+                                            <constraint firstAttribute="height" constant="56" id="KGu-Is-vtI"/>
                                         </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                                 <color key="value" red="0.090196078431372548" green="0.69803921568627447" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
@@ -277,11 +280,14 @@
                                             <action selector="innerEdit:" destination="Kt9-2q-pgP" eventType="editingDidBegin" id="H4c-KE-UXi"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Outer circle ($)" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Exp-gF-tdj" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
+                                    <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Outer circle ($)" adjustsFontSizeToFit="NO" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="Exp-gF-tdj" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="170" y="99" width="123" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="AOC-pT-eRv"/>
+                                        </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                                 <color key="value" red="0.090196078431372548" green="0.69803921568627447" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
@@ -297,11 +303,14 @@
                                             <action selector="outerEdit:" destination="Kt9-2q-pgP" eventType="editingDidBegin" id="29S-Bu-8AC"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Adjust time" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="3gF-57-Jwq" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
+                                    <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Adjust time" adjustsFontSizeToFit="NO" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="3gF-57-Jwq" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="25" y="172" width="123" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="nRp-2S-Nvx"/>
+                                        </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                                 <color key="value" red="0.090196078431372548" green="0.69803921568627447" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
@@ -317,11 +326,14 @@
                                             <action selector="timeEdit:" destination="Kt9-2q-pgP" eventType="editingDidBegin" id="82Z-5v-9F5"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Adjust earnings" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HVG-GP-sYu" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
+                                    <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Adjust earnings" adjustsFontSizeToFit="NO" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="HVG-GP-sYu" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="170" y="172" width="123" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="4Bm-go-7yt"/>
+                                        </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                                 <color key="value" red="0.090196078431372548" green="0.69803921568627447" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
@@ -348,14 +360,14 @@
                                             <action selector="saveClicked:" destination="Kt9-2q-pgP" eventType="touchUpInside" id="3kM-FR-l8b"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pay rate" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Fc-CX-aRA" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
+                                    <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Pay rate" adjustsFontSizeToFit="NO" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="2Fc-CX-aRA" customClass="MadokaTextField" customModule="PayRate" customModuleProvider="target">
                                         <rect key="frame" x="25" y="29" width="123" height="56"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="mYf-cO-5qo"/>
+                                            <constraint firstAttribute="height" constant="56" id="v0D-SY-w9z"/>
                                         </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="PTSans-Regular" family="PT Sans" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
                                                 <color key="value" red="0.090196078431372548" green="0.69803921568627447" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
@@ -374,48 +386,48 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="top" secondItem="TLV-K9-fQO" secondAttribute="top" constant="29" id="0Fr-N2-f3F"/>
-                                    <constraint firstAttribute="trailing" secondItem="ajs-xX-QFe" secondAttribute="trailing" constant="25" id="0Xd-sj-sgq"/>
-                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="top" secondItem="2Fc-CX-aRA" secondAttribute="bottom" constant="14" id="1Oj-kZ-CFE"/>
-                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="leading" secondItem="2Fc-CX-aRA" secondAttribute="leading" id="1k1-8A-Idn"/>
-                                    <constraint firstItem="Exp-gF-tdj" firstAttribute="baseline" secondItem="ec3-Vr-vLw" secondAttribute="baseline" id="2qR-Jx-H9u"/>
-                                    <constraint firstItem="3gF-57-Jwq" firstAttribute="trailing" secondItem="ec3-Vr-vLw" secondAttribute="trailing" id="3Id-o3-EI7"/>
-                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="trailing" secondItem="2Fc-CX-aRA" secondAttribute="trailing" id="3xj-k7-TTq"/>
-                                    <constraint firstAttribute="bottom" secondItem="lFY-BQ-cHs" secondAttribute="bottom" id="4el-XZ-gwc"/>
-                                    <constraint firstItem="3gF-57-Jwq" firstAttribute="top" secondItem="ec3-Vr-vLw" secondAttribute="bottom" constant="17" id="5ID-zg-4tt"/>
-                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="leading" secondItem="Exp-gF-tdj" secondAttribute="leading" id="5SA-BR-ReV"/>
-                                    <constraint firstAttribute="trailing" secondItem="lFY-BQ-cHs" secondAttribute="trailing" id="7ea-D0-xKV"/>
-                                    <constraint firstItem="Exp-gF-tdj" firstAttribute="trailing" secondItem="HVG-GP-sYu" secondAttribute="trailing" id="7f1-w9-wKe"/>
-                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="baseline" secondItem="ajs-xX-QFe" secondAttribute="baseline" id="93I-kc-y1l"/>
-                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="baseline" secondItem="3gF-57-Jwq" secondAttribute="baseline" id="A3v-fu-0rP"/>
-                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="top" secondItem="am8-ld-cqR" secondAttribute="top" id="Exx-Xo-SmN"/>
-                                    <constraint firstItem="3gF-57-Jwq" firstAttribute="trailing" secondItem="xbG-xA-2kF" secondAttribute="trailing" id="G5A-gi-Vcu"/>
-                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="25" id="LsG-Pc-F02"/>
-                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="bottom" secondItem="2Fc-CX-aRA" secondAttribute="bottom" id="R8V-iT-W07"/>
-                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="trailing" secondItem="Exp-gF-tdj" secondAttribute="trailing" id="UNU-v1-3Kz"/>
-                                    <constraint firstItem="3gF-57-Jwq" firstAttribute="bottom" secondItem="HVG-GP-sYu" secondAttribute="bottom" id="XGS-DR-afL"/>
-                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="leading" secondItem="Exp-gF-tdj" secondAttribute="leading" id="Yat-Iu-6Df"/>
-                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="leading" secondItem="3gF-57-Jwq" secondAttribute="leading" id="YeX-AW-MXZ"/>
-                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="50" id="ZIX-yB-rf5"/>
-                                    <constraint firstAttribute="trailing" secondItem="am8-ld-cqR" secondAttribute="trailing" constant="50" id="ZTV-RD-WGA"/>
-                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="top" secondItem="3gF-57-Jwq" secondAttribute="bottom" constant="17" id="dxk-vi-JaF"/>
-                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="leading" secondItem="am8-ld-cqR" secondAttribute="leading" id="hzB-iD-jxH"/>
-                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="baseline" secondItem="am8-ld-cqR" secondAttribute="firstBaseline" id="iYV-En-K3S"/>
-                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="bottom" secondItem="Exp-gF-tdj" secondAttribute="bottom" id="jV7-0v-zA0"/>
-                                    <constraint firstItem="am8-ld-cqR" firstAttribute="baseline" secondItem="xbG-xA-2kF" secondAttribute="firstBaseline" id="spV-V4-scs"/>
-                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="leading" secondItem="2Fc-CX-aRA" secondAttribute="trailing" constant="22" id="twU-ld-4hw"/>
-                                    <constraint firstAttribute="bottom" secondItem="xbG-xA-2kF" secondAttribute="bottom" constant="25" id="uY7-hE-dG7"/>
-                                    <constraint firstItem="lFY-BQ-cHs" firstAttribute="top" secondItem="TLV-K9-fQO" secondAttribute="topMargin" id="uzR-8f-I3v"/>
-                                    <constraint firstItem="lFY-BQ-cHs" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leadingMargin" id="yh7-wU-ZLx"/>
+                                    <constraint firstAttribute="trailing" secondItem="ajs-xX-QFe" secondAttribute="trailing" constant="25" id="2Ph-gV-6KC"/>
+                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="leading" secondItem="am8-ld-cqR" secondAttribute="leading" id="3dj-i3-Sz3"/>
+                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="leading" secondItem="ec3-Vr-vLw" secondAttribute="leading" id="6mR-OY-YrB"/>
+                                    <constraint firstItem="lFY-BQ-cHs" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leadingMargin" id="8EM-PR-jLp"/>
+                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="leading" secondItem="3gF-57-Jwq" secondAttribute="leading" id="ABa-E9-NlD"/>
+                                    <constraint firstItem="am8-ld-cqR" firstAttribute="baseline" secondItem="xbG-xA-2kF" secondAttribute="firstBaseline" id="AxR-di-mgq"/>
+                                    <constraint firstAttribute="trailing" secondItem="am8-ld-cqR" secondAttribute="trailing" constant="50" id="BxF-zv-o78"/>
+                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="bottom" secondItem="Exp-gF-tdj" secondAttribute="bottom" id="EAr-dM-CGI"/>
+                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="trailing" secondItem="2Fc-CX-aRA" secondAttribute="trailing" id="GBA-mm-pRX"/>
+                                    <constraint firstAttribute="bottom" secondItem="xbG-xA-2kF" secondAttribute="bottom" constant="25" id="HMw-yT-V9f"/>
+                                    <constraint firstItem="3gF-57-Jwq" firstAttribute="top" secondItem="ec3-Vr-vLw" secondAttribute="bottom" constant="17" id="LSL-BD-heG"/>
+                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="baseline" secondItem="ajs-xX-QFe" secondAttribute="baseline" id="MKf-NO-KbR"/>
+                                    <constraint firstItem="am8-ld-cqR" firstAttribute="top" secondItem="xbG-xA-2kF" secondAttribute="top" id="PHy-yu-1Y1"/>
+                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="trailing" secondItem="Exp-gF-tdj" secondAttribute="trailing" id="PuT-Oq-dfk"/>
+                                    <constraint firstItem="3gF-57-Jwq" firstAttribute="baseline" secondItem="HVG-GP-sYu" secondAttribute="baseline" id="Rr9-YK-ylX"/>
+                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="trailing" secondItem="Exp-gF-tdj" secondAttribute="trailing" id="SLn-4k-o1s"/>
+                                    <constraint firstAttribute="trailing" secondItem="lFY-BQ-cHs" secondAttribute="trailing" id="SaA-UA-aKx"/>
+                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="trailing" secondItem="3gF-57-Jwq" secondAttribute="trailing" id="Sdg-4j-bvP"/>
+                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="leading" secondItem="Exp-gF-tdj" secondAttribute="leading" id="Zk1-TN-IF4"/>
+                                    <constraint firstItem="HVG-GP-sYu" firstAttribute="bottom" secondItem="3gF-57-Jwq" secondAttribute="bottom" id="c3a-s3-oPf"/>
+                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="top" secondItem="3gF-57-Jwq" secondAttribute="bottom" constant="17" id="cNr-Zt-ki2"/>
+                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="leading" secondItem="Exp-gF-tdj" secondAttribute="leading" id="e42-UV-v2b"/>
+                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="50" id="fM9-cJ-rQF"/>
+                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="top" secondItem="TLV-K9-fQO" secondAttribute="top" constant="29" id="fZX-Zp-tkr"/>
+                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="leading" secondItem="TLV-K9-fQO" secondAttribute="leading" constant="25" id="fyu-fG-4M9"/>
+                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="trailing" secondItem="3gF-57-Jwq" secondAttribute="trailing" id="hi6-gW-9Kr"/>
+                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="baseline" secondItem="Exp-gF-tdj" secondAttribute="baseline" id="inx-mF-zOn"/>
+                                    <constraint firstItem="xbG-xA-2kF" firstAttribute="baseline" secondItem="am8-ld-cqR" secondAttribute="firstBaseline" id="j6N-dJ-sKm"/>
+                                    <constraint firstItem="lFY-BQ-cHs" firstAttribute="top" secondItem="TLV-K9-fQO" secondAttribute="topMargin" id="lDp-H3-YVu"/>
+                                    <constraint firstItem="2Fc-CX-aRA" firstAttribute="bottom" secondItem="ajs-xX-QFe" secondAttribute="bottom" id="mZA-5j-SpZ"/>
+                                    <constraint firstItem="ec3-Vr-vLw" firstAttribute="top" secondItem="2Fc-CX-aRA" secondAttribute="bottom" constant="14" id="qNL-o8-Vhc"/>
+                                    <constraint firstAttribute="bottom" secondItem="lFY-BQ-cHs" secondAttribute="bottom" id="sST-QQ-qDc"/>
+                                    <constraint firstItem="ajs-xX-QFe" firstAttribute="leading" secondItem="2Fc-CX-aRA" secondAttribute="trailing" constant="22" id="t8D-kP-hN6"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TLV-K9-fQO" firstAttribute="centerX" secondItem="Ojy-zh-5fs" secondAttribute="centerX" id="1dG-7Z-183"/>
-                            <constraint firstItem="TLV-K9-fQO" firstAttribute="top" secondItem="7sg-bf-b5U" secondAttribute="bottom" constant="66" id="Lca-XS-Mk3"/>
-                            <constraint firstItem="vcj-Cl-Hpr" firstAttribute="top" secondItem="TLV-K9-fQO" secondAttribute="bottom" constant="270" id="lRZ-BM-Sle"/>
-                            <constraint firstItem="TLV-K9-fQO" firstAttribute="leading" secondItem="Ojy-zh-5fs" secondAttribute="leadingMargin" constant="12" id="rqk-28-gVV"/>
+                            <constraint firstItem="TLV-K9-fQO" firstAttribute="leading" secondItem="Ojy-zh-5fs" secondAttribute="leadingMargin" constant="12" id="9s7-uR-BEU"/>
+                            <constraint firstItem="vcj-Cl-Hpr" firstAttribute="top" secondItem="TLV-K9-fQO" secondAttribute="bottom" constant="270" id="ESL-XE-XVp"/>
+                            <constraint firstItem="TLV-K9-fQO" firstAttribute="centerX" secondItem="Ojy-zh-5fs" secondAttribute="centerX" id="J7h-To-xU4"/>
+                            <constraint firstItem="TLV-K9-fQO" firstAttribute="top" secondItem="7sg-bf-b5U" secondAttribute="bottom" constant="66" id="YUa-Sk-UMN"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

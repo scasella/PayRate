@@ -8,9 +8,16 @@
 
 import UIKit
 
-var settingsDict: [String: Double] = ["PayRate": 0.0, "TaxRate": 0.0, "InnerCircle": 0.0, "OuterCircle": 0.0, "AdjustTime": 0.0, "AdjustPay": 0.0]
+var settingsDict: [String: Double] = ["PayRate":0.0, "TaxRate":0.0, "InnerCircle":1.0, "OuterCircle":5.0, "AdjustTime":totalHours, "AdjustPay":totalPay]
 
 class DetailController: UIViewController {
+    
+    var payUnsaved = false
+    var taxUnsaved = false
+    var innerUnsaved = false
+    var outerUnsaved = false
+    var adjustingTime = false
+    var adjustingPay = false
     
     @IBOutlet var payField: MadokaTextField!
     @IBOutlet var taxField: MadokaTextField!
@@ -23,41 +30,34 @@ class DetailController: UIViewController {
     
     @IBAction func saveClicked(sender: AnyObject) {
         if payField.text == "" {
-            settingsDict.updateValue(0.0, forKey: "PayRate")
-        } else {
+            } else {
             settingsDict.updateValue((payField.text as NSString).doubleValue, forKey: "PayRate") }
         
         if taxField.text == "" {
-            settingsDict.updateValue(0.0, forKey: "TaxRate")
-        } else {
+            } else {
             settingsDict.updateValue((taxField.text as NSString).doubleValue, forKey: "TaxRate") }
             
         if innerField.text == "" {
-        settingsDict.updateValue(0.0, forKey: "InnerCircle")
-        } else {
+            } else {
             settingsDict.updateValue((innerField.text as NSString).doubleValue, forKey: "InnerCircle") }
-            
+        
         if outerField.text == "" {
-        settingsDict.updateValue(0.0, forKey: "OuterCircle")
-        } else {
+            } else {
             settingsDict.updateValue((outerField.text as NSString).doubleValue, forKey: "OuterCircle") }
         
         if adjustTimeField.text == "" {
-        settingsDict.updateValue(0.0, forKey: "AdjustTime")
-        } else {
-            settingsDict.updateValue((adjustTimeField.text as NSString).doubleValue, forKey: "AdjustTime") }
+            } else {
+            settingsDict.updateValue((adjustTimeField.text as NSString).doubleValue, forKey:"AdjustTime") }
             
         if adjustPayField.text == "" {
-        settingsDict.updateValue(0.0, forKey: "AdjustPay")
-        } else {
-        settingsDict.updateValue((adjustPayField.text as NSString).doubleValue, forKey: "AdjustPay") }
+            } else {
+            settingsDict.updateValue((adjustPayField.text as NSString).doubleValue, forKey: "AdjustPay") }
         
         if settingsDict["TaxRate"] == nil {
-        secondRate = settingsDict["PayRate"]! / 60 / 60 }
-        else {
+            secondRate = settingsDict["PayRate"]! / 60 / 60
+            } else {
             var effectiveRate = 1.0 - settingsDict["TaxRate"]!
             secondRate = settingsDict["PayRate"]! * effectiveRate / 60 / 60
-        
             }
         
         performSegueWithIdentifier("backToMain", sender: self)
@@ -67,6 +67,12 @@ class DetailController: UIViewController {
 
   
     override func viewDidLoad() {
+         payUnsaved = false
+         taxUnsaved = false
+         innerUnsaved = false
+         outerUnsaved = false
+         adjustingTime = false
+         adjustingPay = false
 
     }
     
@@ -80,60 +86,93 @@ class DetailController: UIViewController {
     
     
     @IBAction func payEdit(sender: MadokaTextField) {
-        var dict = settingsDict["PayRate"]!
+    var dict = settingsDict["PayRate"]!
+    if payUnsaved == false {
         if dict == 0.0 {
             payField.text = nil
+            payUnsaved = true
         } else {
-            payField.text = "\(dict)" }
+            payField.text = "\(dict)"
+            payUnsaved = true }
+        } else if payField.text == "" && dict != 0.0{
+            payField.text = "\(dict)"}
     }
     
     
 
     @IBAction func taxEdit(sender: MadokaTextField) {
-        var dict1 = settingsDict["TaxRate"]!
+    var dict1 = settingsDict["TaxRate"]!
+    if taxUnsaved == false {
         if dict1 == 0.0 {
-        taxField.text = nil } else {
-        taxField.text = "\(dict1)" }
+            taxField.text = nil
+            taxUnsaved = true
+        } else {
+            taxField.text = "\(dict1)"
+            taxUnsaved = true }
+        } else if taxField.text == "" && dict1 != 0.0{
+            taxField.text = "\(dict1)"}
     }
     
     
     
     @IBAction func innerEdit(sender: MadokaTextField) {
-        var dict2 = settingsDict["InnerCircle"]!
+    var dict2 = settingsDict["InnerCircle"]!
+    if innerUnsaved == false {
         if dict2 == 0.0 {
-        innerField.text = nil } else {
-        innerField.text = "\(dict2)" }
+            innerField.text = nil
+            innerUnsaved = true
+        } else {
+            innerField.text = "\(dict2)"
+            innerUnsaved = true }
+        } else if innerField.text == "" && dict2 != 0.0{
+            innerField.text = "\(dict2)"}
+
     }
     
     
     
     @IBAction func outerEdit(sender: MadokaTextField) {
-        var dict3 = settingsDict["OuterCircle"]!
+    var dict3 = settingsDict["OuterCircle"]!
+    if outerUnsaved == false {
         if dict3 == 0.0 {
-        outerField.text = nil } else {
-        outerField.text = "\(dict3)"}
+            outerField.text = nil
+            outerUnsaved = true
+        } else {
+            outerField.text = "\(dict3)"
+            outerUnsaved = true }
+        } else if outerField.text == "" && dict3 != 0.0 {
+            outerField.text = "\(dict3)"}
     }
     
     
     
     @IBAction func timeEdit(sender: MadokaTextField) {
-        var dict4 = settingsDict["AdjustTime"]!
+     var dict4 = settingsDict["AdjustTime"]!
+     if adjustingTime == false {
         if dict4 == 0.0 {
-            adjustTimeField.text = nil } else {
-        adjustTimeField.text = "\(dict4)"}
+            adjustTimeField.text = nil
+            adjustingTime = true
+        } else {
+            adjustTimeField.text = "\(dict4)"
+            adjustingTime = true }
+        } else if adjustTimeField.text == "" && dict4 != 0.0 {
+            adjustTimeField.text = "\(dict4)"}
     }
     
     
     
     @IBAction func payTouch(sender: MadokaTextField) {
-        var dict5 = settingsDict["AdjustPay"]!
+    var dict5 = settingsDict["AdjustPay"]!
+    if adjustingPay == false {
         if dict5 == 0.0 {
-        adjustPayField.text = nil } else {
-        adjustPayField.text = "\(dict5)" }
+            adjustPayField.text = nil
+        } else {
+            adjustPayField.text = "\(dict5)"
+            adjustingPay = true }
+        } else if adjustPayField.text == "" && dict5 != 0.0 {
+            adjustPayField.text = "\(dict5)"}
     }
     
 
-    
-    
     
 }

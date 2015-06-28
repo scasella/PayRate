@@ -10,11 +10,13 @@ import UIKit
 import QuartzCore
 
 var secondRate = settingsDict["PayRate"]! / 60 / 60
+var seconds:Double = 0.00
+var totalPay = 0.0
+var totalHours = 0.0
 
 class ViewController: UIViewController {
     
     var toggleTimer = false
-    var seconds:Double = 0.00
     var timer = NSTimer()
 
     @IBOutlet var blueLabel: UILabel!
@@ -33,15 +35,14 @@ class ViewController: UIViewController {
     
     @IBAction func setHourlyRate(sender: AnyObject) {
         if toggleTimer  == false {
-        toggleTimer = true
-        seconds = 0.0
-        setupGame()
-        subtractTime()
-        progressView.animateProgressView()
-        progressViewTwo.animateProgressView()
-        cashOutbutton.hidden = true
-        //coinBag.hidden = false
-        //coinBagLabel.hidden = false
+            toggleTimer = true
+            setupGame()
+            subtractTime()
+            progressView.animateProgressView()
+            progressViewTwo.animateProgressView()
+            cashOutbutton.hidden = true
+            //coinBag.hidden = false
+            //coinBagLabel.hidden = false
         } else {
             toggleTimer = false
             coinBag.hidden = true
