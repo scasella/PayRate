@@ -31,7 +31,12 @@ class ViewController: UIViewController {
     @IBOutlet var progressViewTwo: ProgressViewTwo!
     @IBOutlet var progressView: ProgressView!
     
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toAnimation" {
+    progressView.hidden = true
+    progressViewTwo.hidden = true
+        }}
+  
     
     @IBAction func setHourlyRate(sender: AnyObject) {
         if toggleTimer  == false {

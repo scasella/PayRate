@@ -84,6 +84,11 @@ class DetailController: UIViewController {
     }
     
     
+    override func viewDidDisappear(animated: Bool) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
     
     @IBAction func payEdit(sender: MadokaTextField) {
     var dict = settingsDict["PayRate"]!

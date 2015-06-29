@@ -20,6 +20,14 @@
 		8898E3E91B3F353300EE3E76 /* darkTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8898E3E81B3F353300EE3E76 /* darkTabBar.png */; };
 		88ABFAF71B3791BD00F407CC /* PTSans.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 88ABFAF61B3791BD00F407CC /* PTSans.ttc */; };
 		88ABFAFB1B37A1E000F407CC /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABFAFA1B37A1E000F407CC /* TextFieldsEffects.swift */; };
+		88B102571B40C8B300F2D8F6 /* FallingCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B102561B40C8B300F2D8F6 /* FallingCoinsView.swift */; };
+		88B102591B40C90100F2D8F6 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B102581B40C90100F2D8F6 /* AnimationView.swift */; };
+		88B102601B40C9AA00F2D8F6 /* coinBag25.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B1025A1B40C9AA00F2D8F6 /* coinBag25.png */; };
+		88B102611B40C9AA00F2D8F6 /* Path Copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B1025B1B40C9AA00F2D8F6 /* Path Copy 2.png */; };
+		88B102621B40C9AA00F2D8F6 /* Path Copy 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B1025C1B40C9AA00F2D8F6 /* Path Copy 3.png */; };
+		88B102631B40C9AA00F2D8F6 /* Path Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B1025D1B40C9AA00F2D8F6 /* Path Copy.png */; };
+		88B102641B40C9AA00F2D8F6 /* Path25.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B1025E1B40C9AA00F2D8F6 /* Path25.png */; };
+		88B102651B40C9AA00F2D8F6 /* Rect25.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B1025F1B40C9AA00F2D8F6 /* Rect25.png */; };
 		88BB63ED1B3507F800EBC6AD /* greenBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 88BB63EB1B3507F800EBC6AD /* greenBG.png */; };
 		88BB63F21B35C8E000EBC6AD /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB63F11B35C8E000EBC6AD /* ProgressView.swift */; };
 		88BB63F41B35E65700EBC6AD /* ProgressViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BB63F31B35E65700EBC6AD /* ProgressViewTwo.swift */; };
@@ -61,6 +69,14 @@
 		8898E3E81B3F353300EE3E76 /* darkTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkTabBar.png; sourceTree = "<group>"; };
 		88ABFAF61B3791BD00F407CC /* PTSans.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTSans.ttc; sourceTree = "<group>"; };
 		88ABFAFA1B37A1E000F407CC /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
+		88B102561B40C8B300F2D8F6 /* FallingCoinsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingCoinsView.swift; sourceTree = "<group>"; };
+		88B102581B40C90100F2D8F6 /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		88B1025A1B40C9AA00F2D8F6 /* coinBag25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinBag25.png; sourceTree = "<group>"; };
+		88B1025B1B40C9AA00F2D8F6 /* Path Copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Path Copy 2.png"; sourceTree = "<group>"; };
+		88B1025C1B40C9AA00F2D8F6 /* Path Copy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Path Copy 3.png"; sourceTree = "<group>"; };
+		88B1025D1B40C9AA00F2D8F6 /* Path Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Path Copy.png"; sourceTree = "<group>"; };
+		88B1025E1B40C9AA00F2D8F6 /* Path25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Path25.png; sourceTree = "<group>"; };
+		88B1025F1B40C9AA00F2D8F6 /* Rect25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rect25.png; sourceTree = "<group>"; };
 		88BB63EB1B3507F800EBC6AD /* greenBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenBG.png; sourceTree = "<group>"; };
 		88BB63F11B35C8E000EBC6AD /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		88BB63F31B35E65700EBC6AD /* ProgressViewTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewTwo.swift; sourceTree = "<group>"; };
@@ -113,6 +129,13 @@
 		8875D1C21B30F15A00B60105 /* PayClock */ = {
 			isa = PBXGroup;
 			children = (
+				88B102561B40C8B300F2D8F6 /* FallingCoinsView.swift */,
+				88B1025A1B40C9AA00F2D8F6 /* coinBag25.png */,
+				88B1025B1B40C9AA00F2D8F6 /* Path Copy 2.png */,
+				88B1025C1B40C9AA00F2D8F6 /* Path Copy 3.png */,
+				88B1025D1B40C9AA00F2D8F6 /* Path Copy.png */,
+				88B1025E1B40C9AA00F2D8F6 /* Path25.png */,
+				88B1025F1B40C9AA00F2D8F6 /* Rect25.png */,
 				888E63581B3F917A00969EEF /* coinBagFour.png */,
 				88ABFAF61B3791BD00F407CC /* PTSans.ttc */,
 				88C14A2C1B3F856E00CC327A /* mainBGThree.png */,
@@ -133,6 +156,7 @@
 				8875D1C51B30F15A00B60105 /* AppDelegate.swift */,
 				8875D1C71B30F15A00B60105 /* ViewController.swift */,
 				88F3728B1B378D8300BA1713 /* DetailController.swift */,
+				88B102581B40C90100F2D8F6 /* AnimationView.swift */,
 				8875D1C91B30F15A00B60105 /* Main.storyboard */,
 				8875D1CC1B30F15A00B60105 /* Images.xcassets */,
 				8875D1CE1B30F15A00B60105 /* LaunchScreen.xib */,
@@ -246,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88B102631B40C9AA00F2D8F6 /* Path Copy.png in Resources */,
 				88BB63ED1B3507F800EBC6AD /* greenBG.png in Resources */,
 				888E63591B3F917A00969EEF /* coinBagFour.png in Resources */,
 				88C14A281B3F804800CC327A /* setbButton.png in Resources */,
@@ -254,12 +279,17 @@
 				88ABFAF71B3791BD00F407CC /* PTSans.ttc in Resources */,
 				88C14A291B3F804800CC327A /* setOranButton.png in Resources */,
 				8875D1D01B30F15A00B60105 /* LaunchScreen.xib in Resources */,
+				88B102621B40C9AA00F2D8F6 /* Path Copy 3.png in Resources */,
+				88B102611B40C9AA00F2D8F6 /* Path Copy 2.png in Resources */,
 				88C14A251B3F7E3200CC327A /* settingsCard.png in Resources */,
 				8898E3E71B3F350300EE3E76 /* buttonThree.png in Resources */,
 				8898E3E91B3F353300EE3E76 /* darkTabBar.png in Resources */,
+				88B102641B40C9AA00F2D8F6 /* Path25.png in Resources */,
 				88F372861B3735C300BA1713 /* screenTwoBG.png in Resources */,
+				88B102651B40C9AA00F2D8F6 /* Rect25.png in Resources */,
 				8875D1CD1B30F15A00B60105 /* Images.xcassets in Resources */,
 				88F372841B3735C300BA1713 /* screenTwoButton.png in Resources */,
+				88B102601B40C9AA00F2D8F6 /* coinBag25.png in Resources */,
 				88C14A2D1B3F856E00CC327A /* mainBGThree.png in Resources */,
 				8823782A1B33B585005D4868 /* cashOut.png in Resources */,
 			);
@@ -284,6 +314,8 @@
 				88C14A2B1B3F81C900CC327A /* MadokaTextField.swift in Sources */,
 				88BB63F41B35E65700EBC6AD /* ProgressViewTwo.swift in Sources */,
 				88ABFAFB1B37A1E000F407CC /* TextFieldsEffects.swift in Sources */,
+				88B102571B40C8B300F2D8F6 /* FallingCoinsView.swift in Sources */,
+				88B102591B40C90100F2D8F6 /* AnimationView.swift in Sources */,
 				88F3728C1B378D8300BA1713 /* DetailController.swift in Sources */,
 				88BB63F21B35C8E000EBC6AD /* ProgressView.swift in Sources */,
 			);
