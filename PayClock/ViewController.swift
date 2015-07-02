@@ -20,16 +20,13 @@ class ViewController: UIViewController {
     var timer = NSTimer()
 
     @IBOutlet var blueLabel: UILabel!
-    @IBOutlet var hourlyField: UITextField!
-    @IBOutlet var money: UILabel!
-    @IBOutlet var stopped: UILabel!
     @IBOutlet var cashOutbutton: UIButton!
     
     @IBOutlet var startButton: UIButton!
-    @IBOutlet var coinBagLabel: UILabel!
-    @IBOutlet var coinBag: UIImageView!
     @IBOutlet var progressViewTwo: ProgressViewTwo!
     @IBOutlet var progressView: ProgressView!
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toAnimation" {
@@ -37,23 +34,34 @@ class ViewController: UIViewController {
     progressViewTwo.hidden = true
         }}
   
+    enum buttonEnum {
+        
+        case EmptyResume
+        case Paused
+        case UnLoad
+        
+    }
     
-    @IBAction func setHourlyRate(sender: AnyObject) {
-        if toggleTimer  == false {
-            toggleTimer = true
+    var buttonState = buttonEnum.EmptyResume
+    
+    @IBAction func buttonPressed (sender: AnyObject) {
+        switch buttonState  {
+        case .EmptyResume:
+            buttonState = .Paused
             setupGame()
             subtractTime()
             progressView.animateProgressView()
             progressViewTwo.animateProgressView()
-            cashOutbutton.hidden = true
             //coinBag.hidden = false
             //coinBagLabel.hidden = false
-        } else {
-            toggleTimer = false
-            coinBag.hidden = true
-            coinBagLabel.hidden = true
-            cashOutbutton.hidden = false
+        case .Paused:
+            blueLabel.text = "Cash out?"
+            //MAKE 'YES' 'NO' BUTTONS VISIBLE
             timer.invalidate()
+        case .UnLoad:
+            buttonState = .EmptyResume
+            totalHours += seconds / 60
+            seconds = 0.0
         }
     }
     
