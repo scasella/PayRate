@@ -15,6 +15,7 @@
 		883C764C1B4384FA00E3A2EF /* bottonBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 883C76471B4384FA00E3A2EF /* bottonBorder.png */; };
 		883C764D1B4384FA00E3A2EF /* bagPopup.png in Resources */ = {isa = PBXBuildFile; fileRef = 883C76481B4384FA00E3A2EF /* bagPopup.png */; };
 		883C764F1B43887400E3A2EF /* BagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883C764E1B43887400E3A2EF /* BagViewController.swift */; };
+		883E028D1B4998CF00661CB3 /* cashoutButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 883E028C1B4998CF00661CB3 /* cashoutButton.png */; };
 		8875D1C61B30F15A00B60105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1C51B30F15A00B60105 /* AppDelegate.swift */; };
 		8875D1C81B30F15A00B60105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1C71B30F15A00B60105 /* ViewController.swift */; };
 		8875D1CB1B30F15A00B60105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1C91B30F15A00B60105 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		883C76471B4384FA00E3A2EF /* bottonBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottonBorder.png; sourceTree = "<group>"; };
 		883C76481B4384FA00E3A2EF /* bagPopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bagPopup.png; sourceTree = "<group>"; };
 		883C764E1B43887400E3A2EF /* BagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagViewController.swift; sourceTree = "<group>"; };
+		883E028C1B4998CF00661CB3 /* cashoutButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cashoutButton.png; sourceTree = "<group>"; };
 		8875D1C01B30F15A00B60105 /* PayRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8875D1C41B30F15A00B60105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8875D1C51B30F15A00B60105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				88B102561B40C8B300F2D8F6 /* FallingCoinsView.swift */,
+				883E028C1B4998CF00661CB3 /* cashoutButton.png */,
 				8801FE511B44BE2A007969AC /* Rectangle15.png */,
 				883C76451B4384FA00E3A2EF /* settingsIcon.png */,
 				883C76461B4384FA00E3A2EF /* bagIcon.png */,
@@ -311,6 +314,7 @@
 				883C764C1B4384FA00E3A2EF /* bottonBorder.png in Resources */,
 				8898E3E91B3F353300EE3E76 /* darkTabBar.png in Resources */,
 				88B102641B40C9AA00F2D8F6 /* Path25.png in Resources */,
+				883E028D1B4998CF00661CB3 /* cashoutButton.png in Resources */,
 				88F372861B3735C300BA1713 /* screenTwoBG.png in Resources */,
 				88B102651B40C9AA00F2D8F6 /* Rect25.png in Resources */,
 				8875D1CD1B30F15A00B60105 /* Images.xcassets in Resources */,

@@ -15,7 +15,7 @@ class BagViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        label.text = "$\(totalPay)"
+        label.text = "$\(round(totalPay * 100) / 100)"
         
     }
     

@@ -10,9 +10,10 @@ import UIKit
 import QuartzCore
 
 var secondRate = settingsDict["PayRate"]! / 60 / 60
-var seconds:Double = 0.00
-var totalPay = 0.0
-var totalHours = 0.0
+var seconds = 0.00
+var totalPay = 0.00
+var totalHours = 0.00
+var newSeconds = 0.00
 
 class ViewController: UIViewController {
     
@@ -25,20 +26,32 @@ class ViewController: UIViewController {
     @IBOutlet var startButton: UIButton!
     @IBOutlet var progressViewTwo: ProgressViewTwo!
     @IBOutlet var progressView: ProgressView!
+    @IBOutlet var settingsIcon: UIButton!
+    @IBOutlet var bagIcon: UIButton!
     
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toAnimation" {
+    settingsIcon.hidden = true
+    bagIcon.hidden = true
+    buttonState = .EmptyResume
+    newSeconds = seconds 
+    seconds = 0.0
     progressView.hidden = true
     progressViewTwo.hidden = true
-        }}
+        } else if segue.identifier == "toSettings" {
+    settingsIcon.hidden = true
+        }
+    
+    }
+    
   
+    
     enum buttonEnum {
         
         case EmptyResume
         case Paused
-        case UnLoad
         
     }
     
@@ -48,6 +61,8 @@ class ViewController: UIViewController {
         switch buttonState  {
         case .EmptyResume:
             buttonState = .Paused
+            cashOutbutton.hidden = true
+            settingsIcon.hidden = true
             setupGame()
             subtractTime()
             progressView.animateProgressView()
@@ -55,16 +70,15 @@ class ViewController: UIViewController {
             //coinBag.hidden = false
             //coinBagLabel.hidden = false
         case .Paused:
-            blueLabel.text = "Cash out?"
-            //MAKE 'YES' 'NO' BUTTONS VISIBLE
-            timer.invalidate()
-        case .UnLoad:
+            blueLabel.text = "Paused"
+            cashOutbutton.hidden = false
+            settingsIcon.hidden = false
             buttonState = .EmptyResume
-            totalHours += seconds / 60
-            seconds = 0.0
+            timer.invalidate()
+            
         }
     }
-    
+
     
     
     override func viewDidLoad() {
