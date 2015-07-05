@@ -8,7 +8,7 @@
 
 import UIKit
 
-var settingsDict: [String: Double] = ["PayRate":0.0, "TaxRate":0.0, "InnerCircle":1.0, "OuterCircle":5.0, "AdjustTime":totalHours, "AdjustPay":totalPay]
+var settingsDict: [String: Double] = ["PayRate":0.0, "TaxRate":0.0, "InnerCircle":1.0, "OuterCircle":5.0]
 
 class DetailController: UIViewController {
     
@@ -45,13 +45,13 @@ class DetailController: UIViewController {
             } else {
             settingsDict.updateValue((outerField.text as NSString).doubleValue, forKey: "OuterCircle") }
         
-        if adjustTimeField.text == "" {
+        if adjustTimeField.text == "" || adjustTimeField.text == nil {
             } else {
-            settingsDict.updateValue((adjustTimeField.text as NSString).doubleValue, forKey:"AdjustTime") }
+            totalHours = (adjustTimeField.text as NSString).doubleValue }
             
-        if adjustPayField.text == "" {
+        if adjustPayField.text == "" || adjustPayField.text == nil  {
             } else {
-            settingsDict.updateValue((adjustPayField.text as NSString).doubleValue, forKey: "AdjustPay") }
+            totalHours = (adjustPayField.text as NSString).doubleValue }
         
         if settingsDict["TaxRate"] == nil {
             secondRate = settingsDict["PayRate"]! / 60 / 60
@@ -152,32 +152,17 @@ class DetailController: UIViewController {
     
     
     @IBAction func timeEdit(sender: MadokaTextField) {
-     var dict4 = settingsDict["AdjustTime"]!
-     if adjustingTime == false {
-        if dict4 == 0.0 {
-            adjustTimeField.text = nil
-            adjustingTime = true
-        } else {
-            adjustTimeField.text = "\(dict4)"
-            adjustingTime = true }
-        } else if adjustTimeField.text == "" && dict4 != 0.0 {
-            adjustTimeField.text = "\(dict4)"}
+     var dict4 = totalHours
+        adjustTimeField.text = "\(dict4)"
+        
     }
     
     
     
     @IBAction func payTouch(sender: MadokaTextField) {
-    var dict5 = settingsDict["AdjustPay"]!
-    if adjustingPay == false {
-        if dict5 == 0.0 {
-            adjustPayField.text = nil
-        } else {
+    var dict5 = totalPay
             adjustPayField.text = "\(dict5)"
-            adjustingPay = true }
-        } else if adjustPayField.text == "" && dict5 != 0.0 {
-            adjustPayField.text = "\(dict5)"}
     }
-    
 
     
 }

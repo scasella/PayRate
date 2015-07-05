@@ -28,13 +28,14 @@ class ViewController: UIViewController {
     @IBOutlet var progressView: ProgressView!
     @IBOutlet var settingsIcon: UIButton!
     @IBOutlet var bagIcon: UIButton!
-    
+    @IBOutlet var bottomBG: UIImageView!
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toAnimation" {
     settingsIcon.hidden = true
     bagIcon.hidden = true
+    bottomBG.hidden = true
     buttonState = .EmptyResume
     newSeconds = seconds 
     seconds = 0.0

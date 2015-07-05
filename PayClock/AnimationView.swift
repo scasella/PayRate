@@ -31,7 +31,9 @@ class AnimationView: UIViewController {
     
     func addTime(tPay: Double, newSecs: Double, secondRate: Double) -> Void {
         var totalAdd = round(newSecs * secondRate * 100) / 100
+        var totalAddHours = round(newSecs / 60 / 60 * 100) / 100
         totalPay = totalPay + totalAdd
+        totalHours = totalHours + totalAddHours
         
     }
     
