@@ -21,10 +21,13 @@ class AnimationView: UIViewController {
     
     
     override func viewDidAppear(animated: Bool) {
-        animationView.addCoinDropLongAnimation()
         addTime(totalPay, newSecs: newSeconds, secondRate: secondRate)
-       totalPayLabel.hidden = false 
-        totalPayLabel.text = "$\(totalPay)"
+        animationView.addCoinDropLongAnimation { (Bool) in
+            self.totalPayLabel.text = "$\(totalPay)"
+            self.totalPayLabel.hidden = false
+        }
+        NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
+        NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
     }
     
     

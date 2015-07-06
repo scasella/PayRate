@@ -83,10 +83,17 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
-
-           }
+        if NSUserDefaults.standardUserDefaults().objectForKey("totalPay") != nil {
+            totalPay = NSUserDefaults.standardUserDefaults().objectForKey("totalPay") as! Double
+        }
+        if NSUserDefaults.standardUserDefaults().objectForKey("totalHours") != nil {
+            totalHours = NSUserDefaults.standardUserDefaults().objectForKey("totalHours") as! Double
+        }
+        if NSUserDefaults.standardUserDefaults().objectForKey("secondRate") != nil {
+            totalPay = NSUserDefaults.standardUserDefaults().objectForKey("secondRate") as! Double
+        }
     
-
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -10,13 +10,30 @@ import UIKit
 
 class BagViewController: UIViewController {
     
+    var labelToggle = true
+    
     @IBOutlet var label: UILabel!
     
+    @IBAction func changeLabel(sender: AnyObject) {
+        if labelToggle == true {
+            label.text = "$\(round(totalPay * 100) / 100)"
+            labelToggle = false
+        } else {
+            label.text = "\(totalHours)"
+            labelToggle = true
+        }
+        }
     
+
+
     override func viewDidLoad() {
-        
         label.text = "$\(round(totalPay * 100) / 100)"
         
+    }
+    
+    
+    override func viewDidDisappear(animated: Bool) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     

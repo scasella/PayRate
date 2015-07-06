@@ -29,29 +29,51 @@ class DetailController: UIViewController {
     
     
     @IBAction func saveClicked(sender: AnyObject) {
-        if payField.text == "" {
+        if payField.text == "" || payField.text == nil {
             } else {
-            settingsDict.updateValue((payField.text as NSString).doubleValue, forKey: "PayRate") }
+            settingsDict.updateValue((payField.text as NSString).doubleValue, forKey: "PayRate")
+            NSUserDefaults.standardUserDefaults().setObject(settingsDict["PayRate"], forKey: "payRate")}
+        
+        
         
         if taxField.text == "" {
             } else {
-            settingsDict.updateValue((taxField.text as NSString).doubleValue, forKey: "TaxRate") }
-            
+            settingsDict.updateValue((taxField.text as NSString).doubleValue, forKey: "TaxRate")
+            NSUserDefaults.standardUserDefaults().setObject(settingsDict["TaxRate"], forKey: "taxRate")}
+        
+        
+        
         if innerField.text == "" {
             } else {
-            settingsDict.updateValue((innerField.text as NSString).doubleValue, forKey: "InnerCircle") }
+            settingsDict.updateValue((innerField.text as NSString).doubleValue, forKey: "InnerCircle")
+            NSUserDefaults.standardUserDefaults().setObject(settingsDict["InnerCicle"], forKey: "innerCircle")}
+        
+        
+        
         
         if outerField.text == "" {
             } else {
-            settingsDict.updateValue((outerField.text as NSString).doubleValue, forKey: "OuterCircle") }
+            settingsDict.updateValue((outerField.text as NSString).doubleValue, forKey: "OuterCircle")
+            NSUserDefaults.standardUserDefaults().setObject(settingsDict["OuterCircle"], forKey: "outerCircle")}
+        
+        
+        
         
         if adjustTimeField.text == "" || adjustTimeField.text == nil {
             } else {
-            totalHours = (adjustTimeField.text as NSString).doubleValue }
-            
+            totalHours = (adjustTimeField.text as NSString).doubleValue
+            NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")}
+        
+        
+        
+        
         if adjustPayField.text == "" || adjustPayField.text == nil  {
             } else {
-            totalHours = (adjustPayField.text as NSString).doubleValue }
+            totalPay = (adjustPayField.text as NSString).doubleValue
+            NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")}
+        
+        
+        
         
         if settingsDict["TaxRate"] == nil {
             secondRate = settingsDict["PayRate"]! / 60 / 60
@@ -59,6 +81,8 @@ class DetailController: UIViewController {
             var effectiveRate = 1.0 - settingsDict["TaxRate"]!
             secondRate = settingsDict["PayRate"]! * effectiveRate / 60 / 60
             }
+        NSUserDefaults.standardUserDefaults().setObject(secondRate, forKey: "secondRate")
+        
         
         performSegueWithIdentifier("backToMain", sender: self)
         
@@ -67,6 +91,16 @@ class DetailController: UIViewController {
 
   
     override func viewDidLoad() {
+        if NSUserDefaults.standardUserDefaults().objectForKey("payRate") != nil {
+            settingsDict["PayRate"] = (NSUserDefaults.standardUserDefaults().objectForKey("payRate") as! Double) }
+        if NSUserDefaults.standardUserDefaults().objectForKey("taxRate") != nil {
+            settingsDict["TaxRate"] = (NSUserDefaults.standardUserDefaults().objectForKey("taxRate") as! Double) }
+        if NSUserDefaults.standardUserDefaults().objectForKey("innerCircle") != nil {
+            settingsDict["InnerCircle"] = (NSUserDefaults.standardUserDefaults().objectForKey("innerCircle") as! Double) }
+        if NSUserDefaults.standardUserDefaults().objectForKey("outerCircle") != nil {
+            settingsDict["OuterCircle"] = (NSUserDefaults.standardUserDefaults().objectForKey("outerCircle") as! Double) }
+
+
          payUnsaved = false
          taxUnsaved = false
          innerUnsaved = false
@@ -153,16 +187,41 @@ class DetailController: UIViewController {
     
     @IBAction func timeEdit(sender: MadokaTextField) {
      var dict4 = totalHours
-        adjustTimeField.text = "\(dict4)"
+        if adjustingTime == false {
+        if dict4 == 0.0 {
+            adjustTimeField.text = nil
+            adjustingTime = true
+        } else {
+            adjustTimeField.text = "\(dict4)"
+            adjustingTime = true }
+        } else if adjustTimeField.text == "" && dict4 != 0.0 {
+        adjustTimeField.text = "\(dict4)"}
+    }
+    
+    
+
+    @IBAction func payTouch(sender: MadokaTextField) {
+    var dict5 = totalPay
+        if adjustingPay == false {
+            if dict5 == 0.0 {
+                adjustPayField.text = nil
+                adjustingPay = true
+            } else {
+                adjustPayField.text = "\(dict5)"
+                adjustingPay = true }
+        } else if adjustPayField.text == "" && dict5 != 0.0 {
+        adjustPayField.text = "\(dict5)"}
+        
+    }
+    
+    @IBAction func timeChanged(sender: MadokaTextField) {
+        var calculateNewHours = (adjustTimeField.text as NSString).doubleValue - totalHours
+        adjustPayField.becomeFirstResponder()
+        adjustTimeField.becomeFirstResponder()
+        adjustPayField.text = "\(calculateNewHours * secondRate * 60 * 60 + totalPay)"
         
     }
     
     
-    
-    @IBAction func payTouch(sender: MadokaTextField) {
-    var dict5 = totalPay
-            adjustPayField.text = "\(dict5)"
-    }
 
-    
 }
