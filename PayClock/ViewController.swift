@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import QuartzCore
 
 var secondRate = settingsDict["PayRate"]! / 60 / 60
 var seconds = 0.00
@@ -17,24 +16,35 @@ var newSeconds = 0.00
 
 class ViewController: UIViewController {
     
+    enum buttonEnum {
+        case EmptyResume
+        case Paused
+    }
+    
     var toggleTimer = false
     var timer = NSTimer()
 
     @IBOutlet var blueLabel: UILabel!
     @IBOutlet var cashOutbutton: UIButton!
-    
+    @IBOutlet var totalPayLabel: UILabel!
+    @IBOutlet var totalHoursLabel: UILabel!
     @IBOutlet var startButton: UIButton!
     @IBOutlet var progressViewTwo: ProgressViewTwo!
     @IBOutlet var progressView: ProgressView!
     @IBOutlet var settingsIcon: UIButton!
-    @IBOutlet var bagIcon: UIButton!
     @IBOutlet var bottomBG: UIImageView!
+    
+    
+    
+    @IBAction func set(sender: AnyObject) {
+        settingsIcon.setBackgroundImage(UIImage(named: "SettingsButtonF.png"), forState: UIControlState.Normal)
+    }
+    
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "toAnimation" {
     settingsIcon.hidden = true
-    bagIcon.hidden = true
     bottomBG.hidden = true
     buttonState = .EmptyResume
     newSeconds = seconds 
@@ -42,19 +52,9 @@ class ViewController: UIViewController {
     progressView.hidden = true
     progressViewTwo.hidden = true
         } else if segue.identifier == "toSettings" {
-    settingsIcon.hidden = true
-        }
+    }}
+
     
-    }
-    
-  
-    
-    enum buttonEnum {
-        
-        case EmptyResume
-        case Paused
-        
-    }
     
     var buttonState = buttonEnum.EmptyResume
     
@@ -92,8 +92,11 @@ class ViewController: UIViewController {
         if NSUserDefaults.standardUserDefaults().objectForKey("secondRate") != nil {
             totalPay = NSUserDefaults.standardUserDefaults().objectForKey("secondRate") as! Double
         }
-    
+     totalHoursLabel.text = "\(round(totalHours * 100)/100)"
+     totalPayLabel.text = "$\(round(totalPay * 100)/100)"
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

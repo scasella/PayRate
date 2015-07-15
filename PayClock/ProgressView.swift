@@ -47,7 +47,7 @@ class ProgressView: UIView {
         let centerPoint = CGPointMake(CGRectGetWidth(frame)/2 , CGRectGetHeight(frame)/2)
         
         var gradientMaskLayer = gradientMask()
-        progressLayer.path = UIBezierPath(arcCenter:centerPoint, radius: CGRectGetWidth(frame)/2 - 85.0, startAngle:startAngle, endAngle:endAngle, clockwise: true).CGPath
+        progressLayer.path = UIBezierPath(arcCenter:centerPoint, radius: CGRectGetWidth(frame)/2 - 84.0, startAngle:startAngle, endAngle:endAngle, clockwise: true).CGPath
         progressLayer.backgroundColor = UIColor.clearColor().CGColor
         progressLayer.fillColor = nil
         progressLayer.strokeColor = UIColor.blackColor().CGColor
@@ -65,8 +65,8 @@ class ProgressView: UIView {
 
         gradientLayer.locations = [0.0, 1.0]
         
-        let colorTop: AnyObject = UIColor(red: 239.0/255.0, green: 239.0/255.0, blue: 239.0/255.0, alpha: 1.0).CGColor
-        let colorBottom: AnyObject = UIColor(red: 239.0/255.0, green: 239.0/255.0, blue: 239.0/255.0, alpha: 1.0).CGColor
+        let colorTop: AnyObject = UIColor(red: 249.0/255.0, green: 118.0/255.0, blue: 103.0/255.0, alpha: 1.0).CGColor
+        let colorBottom: AnyObject = UIColor(red: 249.0/255.0, green: 118.0/255.0, blue: 103.0/255.0, alpha: 1.0).CGColor
         let arrayOfColors: [AnyObject] = [colorTop, colorBottom]
         gradientLayer.colors = arrayOfColors
         

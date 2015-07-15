@@ -26,8 +26,6 @@ class AnimationView: UIViewController {
             self.totalPayLabel.text = "$\(totalPay)"
             self.totalPayLabel.hidden = false
         }
-        NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
-        NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
     }
     
     
@@ -37,6 +35,8 @@ class AnimationView: UIViewController {
         var totalAddHours = round(newSecs / 60 / 60 * 100) / 100
         totalPay = totalPay + totalAdd
         totalHours = totalHours + totalAddHours
+        NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
+        NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
         
     }
     
