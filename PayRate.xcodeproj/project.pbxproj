@@ -24,6 +24,11 @@
 		8875D1D01B30F15A00B60105 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1CE1B30F15A00B60105 /* LaunchScreen.xib */; };
 		8875D1DC1B30F15A00B60105 /* PayClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1DB1B30F15A00B60105 /* PayClockTests.swift */; };
 		8875D1EC1B30F46600B60105 /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1E51B30F46600B60105 /* coin.png */; };
+		887895C71B560EDF00E7452A /* SettingsBack2.png in Resources */ = {isa = PBXBuildFile; fileRef = 887895C41B560EDF00E7452A /* SettingsBack2.png */; };
+		887895C81B560EDF00E7452A /* SettingsSave2.png in Resources */ = {isa = PBXBuildFile; fileRef = 887895C51B560EDF00E7452A /* SettingsSave2.png */; };
+		887895C91B560EDF00E7452A /* SettingsLabel2.png in Resources */ = {isa = PBXBuildFile; fileRef = 887895C61B560EDF00E7452A /* SettingsLabel2.png */; };
+		887895CC1B56103300E7452A /* SettingsSaveFill.png in Resources */ = {isa = PBXBuildFile; fileRef = 887895CA1B56103300E7452A /* SettingsSaveFill.png */; };
+		887895CD1B56103300E7452A /* SettingsBackFill.png in Resources */ = {isa = PBXBuildFile; fileRef = 887895CB1B56103300E7452A /* SettingsBackFill.png */; };
 		888E63591B3F917A00969EEF /* coinBagFour.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E63581B3F917A00969EEF /* coinBagFour.png */; };
 		8898E3E71B3F350300EE3E76 /* buttonThree.png in Resources */ = {isa = PBXBuildFile; fileRef = 8898E3E61B3F350300EE3E76 /* buttonThree.png */; };
 		8898E3E91B3F353300EE3E76 /* darkTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8898E3E81B3F353300EE3E76 /* darkTabBar.png */; };
@@ -112,6 +117,11 @@
 		8875D1DA1B30F15A00B60105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8875D1DB1B30F15A00B60105 /* PayClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayClockTests.swift; sourceTree = "<group>"; };
 		8875D1E51B30F46600B60105 /* coin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin.png; sourceTree = "<group>"; };
+		887895C41B560EDF00E7452A /* SettingsBack2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsBack2.png; sourceTree = "<group>"; };
+		887895C51B560EDF00E7452A /* SettingsSave2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsSave2.png; sourceTree = "<group>"; };
+		887895C61B560EDF00E7452A /* SettingsLabel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsLabel2.png; sourceTree = "<group>"; };
+		887895CA1B56103300E7452A /* SettingsSaveFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsSaveFill.png; sourceTree = "<group>"; };
+		887895CB1B56103300E7452A /* SettingsBackFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsBackFill.png; sourceTree = "<group>"; };
 		888E63581B3F917A00969EEF /* coinBagFour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinBagFour.png; sourceTree = "<group>"; };
 		8898E3E61B3F350300EE3E76 /* buttonThree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonThree.png; sourceTree = "<group>"; };
 		8898E3E81B3F353300EE3E76 /* darkTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkTabBar.png; sourceTree = "<group>"; };
@@ -297,6 +307,11 @@
 		88B4585E1B55ED21002DD9E6 /* SettingsImages */ = {
 			isa = PBXGroup;
 			children = (
+				887895CA1B56103300E7452A /* SettingsSaveFill.png */,
+				887895CB1B56103300E7452A /* SettingsBackFill.png */,
+				887895C41B560EDF00E7452A /* SettingsBack2.png */,
+				887895C51B560EDF00E7452A /* SettingsSave2.png */,
+				887895C61B560EDF00E7452A /* SettingsLabel2.png */,
 				88B4585F1B55ED31002DD9E6 /* $.png */,
 				88B458601B55ED31002DD9E6 /* EtchedBorder.png */,
 				88B458611B55ED31002DD9E6 /* Group.png */,
@@ -395,6 +410,9 @@
 				88B4586B1B55ED31002DD9E6 /* Group.png in Resources */,
 				884F3EE21B50892400FC24E4 /* DarkBG.png in Resources */,
 				888E63591B3F917A00969EEF /* coinBagFour.png in Resources */,
+				887895CD1B56103300E7452A /* SettingsBackFill.png in Resources */,
+				887895CC1B56103300E7452A /* SettingsSaveFill.png in Resources */,
+				887895C91B560EDF00E7452A /* SettingsLabel2.png in Resources */,
 				88AF4ADB1B50A03900DBBA06 /* SettingsButton2.png in Resources */,
 				884F3EE31B50892400FC24E4 /* SettingButton.png in Resources */,
 				883C764B1B4384FA00E3A2EF /* bagIcon.png in Resources */,
@@ -405,6 +423,7 @@
 				88B102621B40C9AA00F2D8F6 /* Path Copy 3.png in Resources */,
 				88B102611B40C9AA00F2D8F6 /* Path Copy 2.png in Resources */,
 				88C14A251B3F7E3200CC327A /* settingsCard.png in Resources */,
+				887895C81B560EDF00E7452A /* SettingsSave2.png in Resources */,
 				8898E3E71B3F350300EE3E76 /* buttonThree.png in Resources */,
 				883C764A1B4384FA00E3A2EF /* settingsIcon.png in Resources */,
 				883C764C1B4384FA00E3A2EF /* bottonBorder.png in Resources */,
@@ -423,6 +442,7 @@
 				8875D1CD1B30F15A00B60105 /* Images.xcassets in Resources */,
 				88F372841B3735C300BA1713 /* screenTwoButton.png in Resources */,
 				88B4586D1B55ED31002DD9E6 /* SettingSave.png in Resources */,
+				887895C71B560EDF00E7452A /* SettingsBack2.png in Resources */,
 				88B4586E1B55ED31002DD9E6 /* SettingsText.png in Resources */,
 				88B458721B55ED31002DD9E6 /* BigCircle.png in Resources */,
 				88B102601B40C9AA00F2D8F6 /* coinBag25.png in Resources */,

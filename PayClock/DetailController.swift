@@ -27,6 +27,11 @@ class DetailController: UIViewController {
     @IBOutlet var saveButton: UIButton!
     @IBOutlet var settingsLabel: UILabel!
     
+    @IBOutlet var payHighlight: UIImageView!
+    @IBOutlet var littleHighlight: UIImageView!
+    @IBOutlet var bigHighlight: UIImageView!
+    @IBOutlet var adjustHighlight: UIImageView!
+    
     
     
     @IBAction func backPressed(sender: AnyObject) {
@@ -40,35 +45,32 @@ class DetailController: UIViewController {
     
     @IBAction func setToPay(sender: AnyObject) {
         settingsSet = .Pay
-        objectSetup("PayRate")
-        
+        objectSetup("PayRate", enumValue: settingsSet)
     }
     
     
     
     @IBAction func setToLittle(sender: AnyObject) {
         settingsSet = .Little
-        objectSetup("LittleCircle")
+        objectSetup("LittleCircle", enumValue: settingsSet)
+
     }
     
     
     
     @IBAction func setToBig(sender: AnyObject) {
         settingsSet = .BigCircle
-        objectSetup("BigCircle")
+        objectSetup("BigCircle", enumValue: settingsSet)
     
     }
     
     
-
+/*
     @IBAction func setToAdjust(sender: AnyObject) {
         settingsSet = .Adjust
-        /*//pull in totalPay and totalHours
-        settingsField.text = "\(dictLookup)"
-        settingsField.enabled = true*/
-
+        objectSetup("LittleCircle", enumValue: settingsSet)
     }
-    
+  */  
    
     
     @IBAction func saveClicked(sender: AnyObject) {
@@ -118,6 +120,10 @@ class DetailController: UIViewController {
         settingsField.placeholder = "tap below"
         settingsField.enabled = false
         saveButton.enabled = false
+        payHighlight.hidden = true
+        littleHighlight.hidden = true
+        bigHighlight.hidden = true
+        adjustHighlight.hidden = true
         settingsSet = .None
     }
     
@@ -131,11 +137,43 @@ class DetailController: UIViewController {
     
     
     
-    func objectSetup(object: String) {
+    func objectSetup(object: String, enumValue: settingsChoice) {
         let dictLookup = settingsDict[object]!
         settingsField.text = "\(dictLookup)"
         settingsField.enabled = true
         saveButton.enabled = true
+        
+        switch enumValue {
+        case .Pay:
+            settingsLabel.text = "Pay Rate"
+            payHighlight.hidden = false
+            littleHighlight.hidden = true
+            bigHighlight.hidden = true
+            adjustHighlight.hidden = true
+        case .Little:
+            settingsLabel.text = "Inner Circle Finishes Every"
+            payHighlight.hidden = true
+            littleHighlight.hidden = false
+            bigHighlight.hidden = true
+            adjustHighlight.hidden = true
+        case .BigCircle:
+            settingsLabel.text = "Outer Circle Finishes Every"
+            payHighlight.hidden = true
+            littleHighlight.hidden = true
+            bigHighlight.hidden = false
+            adjustHighlight.hidden = true
+        case .Adjust:
+            settingsLabel.text = "Adjust Time/Pay"
+            payHighlight.hidden = true
+            littleHighlight.hidden = true
+            bigHighlight.hidden = true
+            adjustHighlight.hidden = false
+            /*//pull in totalPay and totalHours
+            settingsField.text = "\(dictLookup)"
+            settingsField.enabled = true*/
+        default: println("nil")
+
+        }
     }
     
     
