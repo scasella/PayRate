@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import iAd
 
 var secondRate = settingsDict["PayRate"]! / 60 / 60
 var seconds = 0.00
@@ -33,7 +34,8 @@ class ViewController: UIViewController {
     @IBOutlet var progressView: ProgressView!
     @IBOutlet var settingsIcon: UIButton!
     @IBOutlet var bottomBG: UIImageView!
-    
+    @IBOutlet var adBanner: ADBannerView!
+
     
     
     @IBAction func set(sender: AnyObject) {
@@ -52,6 +54,8 @@ class ViewController: UIViewController {
     progressView.hidden = true
     progressViewTwo.hidden = true
         } else if segue.identifier == "toSettings" {
+            settingsIcon.hidden = true
+            adBanner.hidden = true
     }}
 
     
@@ -83,6 +87,8 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        canDisplayBannerAds = true
+        
         if NSUserDefaults.standardUserDefaults().objectForKey("totalPay") != nil {
             totalPay = NSUserDefaults.standardUserDefaults().objectForKey("totalPay") as! Double
         }
