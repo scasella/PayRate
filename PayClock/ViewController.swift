@@ -10,6 +10,7 @@ import UIKit
 import iAd
 
 var secondRate = settingsDict["PayRate"]! / 60 / 60
+var blueLabelValue = 0.00
 var seconds = 0.00
 var totalPay = 0.00
 var totalHours = 0.00
@@ -18,7 +19,8 @@ var newSeconds = 0.00
 class ViewController: UIViewController {
     
     enum buttonEnum {
-        case EmptyResume
+        case Empty
+        case StartOrResume
         case Paused
     }
     
@@ -42,29 +44,24 @@ class ViewController: UIViewController {
         settingsIcon.setBackgroundImage(UIImage(named: "SettingsButtonF.png"), forState: UIControlState.Normal)
     }
     
+    @IBAction func cashOut(sender: AnyObject) {
+        addTime(totalPay, newSecs: seconds, secondRate: secondRate)
+    }
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toAnimation" {
-    settingsIcon.hidden = true
-    bottomBG.hidden = true
-    buttonState = .EmptyResume
-    newSeconds = seconds 
-    seconds = 0.0
-    progressView.hidden = true
-    progressViewTwo.hidden = true
-        } else if segue.identifier == "toSettings" {
+        if segue.identifier == "toSettings" {
             settingsIcon.hidden = true
             adBanner.hidden = true
     }}
 
     
     
-    var buttonState = buttonEnum.EmptyResume
+    var buttonState = buttonEnum.StartOrResume
     
     @IBAction func buttonPressed (sender: AnyObject) {
         switch buttonState  {
-        case .EmptyResume:
+        case .StartOrResume:
             buttonState = .Paused
             cashOutbutton.hidden = true
             settingsIcon.hidden = true
@@ -78,9 +75,14 @@ class ViewController: UIViewController {
             blueLabel.text = "Paused"
             cashOutbutton.hidden = false
             settingsIcon.hidden = false
-            buttonState = .EmptyResume
+            buttonState = .StartOrResume
             timer.invalidate()
-            
+        case .Empty:
+            buttonState = .StartOrResume
+            blueLabel.text = "Start"
+            cashOutbutton.hidden = true
+            settingsIcon.hidden = false
+            seconds = 0.0
         }
     }
 
@@ -88,6 +90,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         canDisplayBannerAds = true
+        
+        if NSUserDefaults.standardUserDefaults().objectForKey("PayRate") != nil {
+            settingsDict["PayRate"] = NSUserDefaults.standardUserDefaults().objectForKey("PayRate") as! Double!
+        }
+        secondRate = settingsDict["PayRate"]! / 60 / 60
         
         if NSUserDefaults.standardUserDefaults().objectForKey("totalPay") != nil {
             totalPay = NSUserDefaults.standardUserDefaults().objectForKey("totalPay") as! Double
@@ -118,8 +125,24 @@ class ViewController: UIViewController {
     
     
     
+    func addTime(tPay: Double, newSecs: Double, secondRate: Double) -> Void {
+        buttonState = .Empty
+        var totalAdd = blueLabelValue
+        var totalAddHours = newSecs / 60 / 60
+        totalPay = totalPay + totalAdd
+        totalHours = totalHours + totalAddHours
+        NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
+        NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
+        totalHoursLabel.text = "\(totalHours)"
+        totalPayLabel.text = "\(totalPay)"
+        seconds = 0.00
+    }
+
+    
+    
     func subtractTime() {
         seconds++
+        blueLabelValue =  Double(round(secondRate * seconds * 100)/100)
         blueLabel.text = "$\(Double(round(secondRate * seconds * 100)/100))"}
 }
 

@@ -27,13 +27,6 @@ class DetailController: UIViewController {
     @IBOutlet var saveButton: UIButton!
     @IBOutlet var settingsLabel: UILabel!
     
-    @IBOutlet var payHighlight: UIImageView!
-    @IBOutlet var littleHighlight: UIImageView!
-    @IBOutlet var bigHighlight: UIImageView!
-    @IBOutlet var adjustHighlight: UIImageView!
-    
-    
-    
     @IBAction func backPressed(sender: AnyObject) {
         if settingsSet == .None {
             performSegueWithIdentifier("backToMain", sender: self)
@@ -120,10 +113,6 @@ class DetailController: UIViewController {
         settingsField.placeholder = "tap below"
         settingsField.enabled = false
         saveButton.enabled = false
-        payHighlight.hidden = true
-        littleHighlight.hidden = true
-        bigHighlight.hidden = true
-        adjustHighlight.hidden = true
         settingsSet = .None
     }
     
@@ -146,28 +135,12 @@ class DetailController: UIViewController {
         switch enumValue {
         case .Pay:
             settingsLabel.text = "Pay Rate"
-            payHighlight.hidden = false
-            littleHighlight.hidden = true
-            bigHighlight.hidden = true
-            adjustHighlight.hidden = true
         case .Little:
             settingsLabel.text = "Inner Circle Finishes Every"
-            payHighlight.hidden = true
-            littleHighlight.hidden = false
-            bigHighlight.hidden = true
-            adjustHighlight.hidden = true
         case .BigCircle:
             settingsLabel.text = "Outer Circle Finishes Every"
-            payHighlight.hidden = true
-            littleHighlight.hidden = true
-            bigHighlight.hidden = false
-            adjustHighlight.hidden = true
         case .Adjust:
             settingsLabel.text = "Adjust Time/Pay"
-            payHighlight.hidden = true
-            littleHighlight.hidden = true
-            bigHighlight.hidden = true
-            adjustHighlight.hidden = false
             /*//pull in totalPay and totalHours
             settingsField.text = "\(dictLookup)"
             settingsField.enabled = true*/
