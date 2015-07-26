@@ -76,6 +76,8 @@ class ViewController: UIViewController {
             cashOutbutton.hidden = false
             settingsIcon.hidden = false
             buttonState = .StartOrResume
+            progressView.hideProgressView()
+            progressViewTwo.hideProgressView()
             timer.invalidate()
         case .Empty:
             buttonState = .StartOrResume
@@ -133,9 +135,12 @@ class ViewController: UIViewController {
         totalHours = totalHours + totalAddHours
         NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
         NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
-        totalHoursLabel.text = "\(totalHours)"
-        totalPayLabel.text = "\(totalPay)"
+        totalHoursLabel.text = "\(round(totalHours * 100)/100)"
+        totalPayLabel.text = "$\(round(totalPay * 100)/100)"
+        totalAdd = 0.00
+        totalAddHours = 0.00
         seconds = 0.00
+        blueLabelValue = 0.00
     }
 
     
@@ -143,6 +148,11 @@ class ViewController: UIViewController {
     func subtractTime() {
         seconds++
         blueLabelValue =  Double(round(secondRate * seconds * 100)/100)
-        blueLabel.text = "$\(Double(round(secondRate * seconds * 100)/100))"}
+        blueLabel.text = "$\(Double(round(secondRate * seconds * 100)/100))"
+        if seconds * secondRate % settingsDict["LittleCircle"]! == 0 {
+            progressView.animateProgressView() }
+        if seconds * secondRate % settingsDict["BigCircle"]! == 0 {
+            progressViewTwo.animateProgressView() }
+    }
 }
 

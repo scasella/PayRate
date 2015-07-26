@@ -15,17 +15,17 @@ class DetailController: UIViewController {
     enum settingsChoice {case None,Pay,Little,BigCircle,Adjust}
     
     var settingsSet = settingsChoice.None
-    
-    var payUnsaved = false
-    var taxUnsaved = false
-    var LittleUnsaved = false
-    var outerUnsaved = false
-    var adjustingTime = false
-    var adjustingPay = false
+  
+    var adjustPay = true
     
     @IBOutlet var settingsField: UITextField!
     @IBOutlet var saveButton: UIButton!
     @IBOutlet var settingsLabel: UILabel!
+    @IBOutlet var springView: SpringView!
+    
+    @IBOutlet var adjustLabel: UILabel!
+    @IBOutlet var dollarLabel: UILabel!
+    
     
     @IBAction func backPressed(sender: AnyObject) {
         if settingsSet == .None {
@@ -34,7 +34,14 @@ class DetailController: UIViewController {
         
         }}
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    if segue.identifier == "backToMain" {
+        springView.animation = "fall"
+        springView.x = -200
+        springView.animate()
     
+    }
+    }
     
     @IBAction func setToPay(sender: AnyObject) {
         settingsSet = .Pay
@@ -58,12 +65,33 @@ class DetailController: UIViewController {
     }
     
     
-/*
+
     @IBAction func setToAdjust(sender: AnyObject) {
         settingsSet = .Adjust
-        objectSetup("LittleCircle", enumValue: settingsSet)
+        if adjustPay == true {
+            settingsLabel.text = "Adjust Pay"
+            adjustLabel.text = "tap again to adjust time"
+            adjustLabel.hidden = false
+            dollarLabel.hidden = false
+            settingsField.text = "\(round(totalPay * 100)/100)"
+            settingsField.enabled = true
+            settingsField.enabled = true
+            saveButton.enabled = true
+            adjustPay = false
+        } else {
+            settingsLabel.text = "Adjust Hours"
+            adjustLabel.text = "tap again to adjust pay"
+            adjustLabel.hidden = false
+            dollarLabel.hidden = true
+            settingsField.text = "\(round(totalHours * 100)/100)"
+            settingsField.enabled = true
+            settingsField.enabled = true
+            saveButton.enabled = true
+            adjustPay = true
+
+        }
     }
-  */  
+  
    
     
     @IBAction func saveClicked(sender: AnyObject) {
@@ -74,9 +102,25 @@ class DetailController: UIViewController {
 
         case .BigCircle: saveObject("BigCircle")
 
-       /* case .Adjust: settingsDict.updateValue((settingsField.text as NSString).doubleValue, forKey: "PayRate")
-        NSUserDefaults.standardUserDefaults().setObject(settingsDict["PayRate"], forKey: "payRate")*/
-
+        case .Adjust:
+            
+            if adjustPay == false {
+                
+            totalPay = (settingsField.text as NSString).doubleValue
+            NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
+            
+            } else {
+            
+            var adjustAmt = ((settingsField.text as NSString).doubleValue - totalHours) * settingsDict["PayRate"]!
+            totalHours = (settingsField.text as NSString).doubleValue
+            totalPay = totalPay + adjustAmt
+            NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
+            NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
+           
+            }
+       
+            resetAllObjects()
+       
         default:
             println("Not a safe place for humans")
         }
@@ -113,6 +157,8 @@ class DetailController: UIViewController {
         settingsField.placeholder = "tap below"
         settingsField.enabled = false
         saveButton.enabled = false
+        adjustLabel.hidden = true
+        dollarLabel.hidden = true
         settingsSet = .None
     }
     
@@ -128,9 +174,11 @@ class DetailController: UIViewController {
     
     func objectSetup(object: String, enumValue: settingsChoice) {
         let dictLookup = settingsDict[object]!
+        adjustLabel.hidden = true
         settingsField.text = "\(dictLookup)"
         settingsField.enabled = true
         saveButton.enabled = true
+        dollarLabel.hidden = false
         
         switch enumValue {
         case .Pay:
@@ -139,11 +187,6 @@ class DetailController: UIViewController {
             settingsLabel.text = "Inner Circle Finishes Every"
         case .BigCircle:
             settingsLabel.text = "Outer Circle Finishes Every"
-        case .Adjust:
-            settingsLabel.text = "Adjust Time/Pay"
-            /*//pull in totalPay and totalHours
-            settingsField.text = "\(dictLookup)"
-            settingsField.enabled = true*/
         default: println("nil")
 
         }
