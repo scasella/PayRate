@@ -51,12 +51,6 @@ class ViewController: UIViewController {
     
     @IBAction func cashOut(sender: AnyObject) {
         addTime(totalPay, newSecs: seconds, secondRate: secondRate)
-        buttonState = .ToStartOrResume
-        blueLabel.text = "Start"
-        cashOutbutton.hidden = true
-        settingsIcon.hidden = false
-        seconds = 0.0
-
     }
     
     
@@ -78,8 +72,8 @@ class ViewController: UIViewController {
             settingsIcon.hidden = true
             setupGame()
             subtractTime()
-            progressView.animateProgressView()
-            progressViewTwo.animateProgressView()
+            //progressView.animateProgressView()
+            //progressViewTwo.animateProgressView()
             //coinBag.hidden = false
             //coinBagLabel.hidden = false
         case .ToPaused:
@@ -135,7 +129,7 @@ class ViewController: UIViewController {
     
     
     func setupGame() {
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
         
     }
     
@@ -154,13 +148,31 @@ class ViewController: UIViewController {
         totalAddHours = 0.00
         seconds = 0.00
         blueLabelValue = 0.00
+        buttonState = .ToStartOrResume
+        blueLabel.text = "Start"
+        cashOutbutton.hidden = true
+        settingsIcon.hidden = false
+        seconds = 0.0
+        progressView.progressLayer.strokeEnd = 0.0
+        progressViewTwo.progressLayer.strokeEnd = 0.0
     }
 
     
     
     func subtractTime() {
-        seconds += 0.01
-        progressView.progressLayer.strokeEnd = CGFloat(seconds * secondRate % settingsDict["LittleCircle"]!)
+        seconds += 0.1
+        var innerCounter = CGFloat(seconds * secondRate / settingsDict["LittleCircle"]! % settingsDict["LittleCircle"]!)
+        var outerCounter = CGFloat(seconds * secondRate / settingsDict["BigCircle"]! % settingsDict["BigCircle"]!)
+        progressView.progressLayer.strokeEnd = innerCounter
+        progressViewTwo.progressLayer.strokeEnd = outerCounter
+        if progressView.progressLayer.strokeEnd % 1 >= 1.0 {
+            //progressView.progressLayer.strokeStart = 0.0
+            progressView.progressLayer.strokeEnd = 0.0
+        }
+        if progressViewTwo.progressLayer.strokeEnd % 1 >= 1.0 {
+           // progressViewTwo.progressLayer.strokeStart = 0.0
+            progressViewTwo.progressLayer.strokeEnd = 0.0
+        }
         blueLabelValue =  Double(round(secondRate * seconds * 100)/100)
         blueLabel.text = "$\(Double(round(secondRate * seconds * 100)/100))"
      /*   if seconds * secondRate % settingsDict["LittleCircle"]! == 0 {

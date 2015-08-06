@@ -18,11 +18,13 @@ class DetailController: UIViewController {
   
     var adjustPay = true
     
+    @IBOutlet var welcomeLabel: UILabel!
+    @IBOutlet var divider: UIImageView!
     @IBOutlet var settingsField: UITextField!
     @IBOutlet var saveButton: UIButton!
+    @IBOutlet var backButton: UIButton!
     @IBOutlet var settingsLabel: UILabel!
     @IBOutlet var springView: SpringView!
-    
     @IBOutlet var adjustLabel: UILabel!
     @IBOutlet var dollarLabel: UILabel!
     
@@ -70,13 +72,15 @@ class DetailController: UIViewController {
         settingsSet = .Adjust
         if adjustPay == true {
             settingsLabel.text = "Adjust Pay"
-            adjustLabel.text = "tap again to adjust time"
+            adjustLabel.text = "tap again to adjust hours"
             adjustLabel.hidden = false
             dollarLabel.hidden = false
             settingsField.text = "\(round(totalPay * 100)/100)"
-            settingsField.enabled = true
-            settingsField.enabled = true
-            saveButton.enabled = true
+            saveButton.hidden = false
+            backButton.hidden = false
+            settingsField.hidden = false
+            divider.hidden = false
+            welcomeLabel.hidden = true
             adjustPay = false
         } else {
             settingsLabel.text = "Adjust Hours"
@@ -84,9 +88,11 @@ class DetailController: UIViewController {
             adjustLabel.hidden = false
             dollarLabel.hidden = true
             settingsField.text = "\(round(totalHours * 100)/100)"
-            settingsField.enabled = true
-            settingsField.enabled = true
-            saveButton.enabled = true
+            saveButton.hidden = false
+            backButton.hidden = false
+            settingsField.hidden = false
+            divider.hidden = false
+            welcomeLabel.hidden = true
             adjustPay = true
 
         }
@@ -108,6 +114,7 @@ class DetailController: UIViewController {
                 
             totalPay = (settingsField.text as NSString).doubleValue
             NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
+                welcomeLabel.text = "Saved"
             
             } else {
             
@@ -116,7 +123,7 @@ class DetailController: UIViewController {
             totalPay = totalPay + adjustAmt
             NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
             NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
-           
+            welcomeLabel.text = "Saved"
             }
        
             resetAllObjects()
@@ -154,11 +161,14 @@ class DetailController: UIViewController {
     func resetAllObjects() {
         settingsLabel.text = "Settings"
         settingsField.text = ""
-        settingsField.placeholder = "tap below"
+        settingsField.hidden = true
         settingsField.enabled = false
-        saveButton.enabled = false
+        saveButton.hidden = true
+        backButton.hidden = true
         adjustLabel.hidden = true
         dollarLabel.hidden = true
+        divider.hidden = true
+        welcomeLabel.hidden = false
         settingsSet = .None
     }
     
@@ -167,6 +177,7 @@ class DetailController: UIViewController {
     func saveObject(object: String) {
         settingsDict.updateValue((settingsField.text as NSString).doubleValue, forKey: object)
         NSUserDefaults.standardUserDefaults().setObject(settingsDict[object], forKey: object)
+        welcomeLabel.text = "Saved"
         resetAllObjects()
     }
     
@@ -177,8 +188,12 @@ class DetailController: UIViewController {
         adjustLabel.hidden = true
         settingsField.text = "\(dictLookup)"
         settingsField.enabled = true
-        saveButton.enabled = true
+        saveButton.hidden = false
+        backButton.hidden = false
+        settingsField.hidden = false
         dollarLabel.hidden = false
+        divider.hidden = false
+        welcomeLabel.hidden = true
         
         switch enumValue {
         case .Pay:
