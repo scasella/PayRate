@@ -182,7 +182,7 @@ class DetailController: UIViewController {
         
         switch enumValue {
         case .Pay:
-            settingsLabel.text = "Pay Rate"
+            settingsLabel.text = "Hourly Pay"
         case .Little:
             settingsLabel.text = "Inner Circle Finishes Every"
         case .BigCircle:

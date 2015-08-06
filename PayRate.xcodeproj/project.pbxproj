@@ -70,7 +70,6 @@
 		88AF4ADB1B50A03900DBBA06 /* SettingsButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AF4AD91B50A03900DBBA06 /* SettingsButton2.png */; };
 		88AF4ADC1B50A03900DBBA06 /* SettingsButtonF.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AF4ADA1B50A03900DBBA06 /* SettingsButtonF.png */; };
 		88B102571B40C8B300F2D8F6 /* FallingCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B102561B40C8B300F2D8F6 /* FallingCoinsView.swift */; };
-		88B102591B40C90100F2D8F6 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B102581B40C90100F2D8F6 /* AnimationView.swift */; };
 		88B102601B40C9AA00F2D8F6 /* coinBag25.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B1025A1B40C9AA00F2D8F6 /* coinBag25.png */; };
 		88B102611B40C9AA00F2D8F6 /* Path Copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B1025B1B40C9AA00F2D8F6 /* Path Copy 2.png */; };
 		88B102621B40C9AA00F2D8F6 /* Path Copy 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B1025C1B40C9AA00F2D8F6 /* Path Copy 3.png */; };
@@ -186,7 +185,6 @@
 		88AF4AD91B50A03900DBBA06 /* SettingsButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsButton2.png; sourceTree = "<group>"; };
 		88AF4ADA1B50A03900DBBA06 /* SettingsButtonF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsButtonF.png; sourceTree = "<group>"; };
 		88B102561B40C8B300F2D8F6 /* FallingCoinsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingCoinsView.swift; sourceTree = "<group>"; };
-		88B102581B40C90100F2D8F6 /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		88B1025A1B40C9AA00F2D8F6 /* coinBag25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinBag25.png; sourceTree = "<group>"; };
 		88B1025B1B40C9AA00F2D8F6 /* Path Copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Path Copy 2.png"; sourceTree = "<group>"; };
 		88B1025C1B40C9AA00F2D8F6 /* Path Copy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Path Copy 3.png"; sourceTree = "<group>"; };
@@ -352,7 +350,6 @@
 				8875D1C51B30F15A00B60105 /* AppDelegate.swift */,
 				8875D1C71B30F15A00B60105 /* ViewController.swift */,
 				88F3728B1B378D8300BA1713 /* DetailController.swift */,
-				88B102581B40C90100F2D8F6 /* AnimationView.swift */,
 				8875D1C91B30F15A00B60105 /* Main.storyboard */,
 				8875D1CC1B30F15A00B60105 /* Images.xcassets */,
 				8875D1CE1B30F15A00B60105 /* LaunchScreen.xib */,
@@ -568,7 +565,6 @@
 				8854727A1B61CC75004103E3 /* Spring.swift in Sources */,
 				885472821B61CC75004103E3 /* TransitionManager.swift in Sources */,
 				885472761B61CC75004103E3 /* ImageLoader.swift in Sources */,
-				88B102591B40C90100F2D8F6 /* AnimationView.swift in Sources */,
 				885472711B61CC75004103E3 /* DesignableLabel.swift in Sources */,
 				88F3728C1B378D8300BA1713 /* DetailController.swift in Sources */,
 				885472771B61CC75004103E3 /* KeyboardLayoutConstraint.swift in Sources */,

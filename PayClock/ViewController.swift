@@ -9,6 +9,8 @@
 import UIKit
 import iAd
 
+
+var buttonState = buttonEnum.ToStartOrResume
 var secondRate = settingsDict["PayRate"]! / 60 / 60
 var blueLabelValue = 0.00
 var seconds = 0.00
@@ -16,13 +18,14 @@ var totalPay = 0.00
 var totalHours = 0.00
 var newSeconds = 0.00
 
+enum buttonEnum {
+    case ToStartOrResume
+    case ToPaused
+    case ToResume
+}
+
+
 class ViewController: UIViewController {
-    
-    enum buttonEnum {
-        case Empty
-        case StartOrResume
-        case Paused
-    }
     
     var toggleTimer = false
     var timer = NSTimer()
@@ -44,9 +47,18 @@ class ViewController: UIViewController {
         settingsIcon.setBackgroundImage(UIImage(named: "SettingsButtonF.png"), forState: UIControlState.Normal)
     }
     
+    
+    
     @IBAction func cashOut(sender: AnyObject) {
         addTime(totalPay, newSecs: seconds, secondRate: secondRate)
+        buttonState = .ToStartOrResume
+        blueLabel.text = "Start"
+        cashOutbutton.hidden = true
+        settingsIcon.hidden = false
+        seconds = 0.0
+
     }
+    
     
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -57,12 +69,11 @@ class ViewController: UIViewController {
 
     
     
-    var buttonState = buttonEnum.StartOrResume
-    
     @IBAction func buttonPressed (sender: AnyObject) {
         switch buttonState  {
-        case .StartOrResume:
-            buttonState = .Paused
+        case .ToStartOrResume:
+            buttonState = .ToPaused
+             NSUserDefaults.standardUserDefaults().setObject(savedTime, forKey: "buttonState")
             cashOutbutton.hidden = true
             settingsIcon.hidden = true
             setupGame()
@@ -71,26 +82,29 @@ class ViewController: UIViewController {
             progressViewTwo.animateProgressView()
             //coinBag.hidden = false
             //coinBagLabel.hidden = false
-        case .Paused:
+        case .ToPaused:
+            buttonState = .ToResume
             blueLabel.text = "Paused"
             cashOutbutton.hidden = false
             settingsIcon.hidden = false
-            buttonState = .StartOrResume
-            progressView.hideProgressView()
-            progressViewTwo.hideProgressView()
+            buttonState = .ToStartOrResume
+            //progressView.progressLayer.strokeEnd = 0.3
             timer.invalidate()
-        case .Empty:
-            buttonState = .StartOrResume
-            blueLabel.text = "Start"
-            cashOutbutton.hidden = true
-            settingsIcon.hidden = false
-            seconds = 0.0
+        case .ToResume:
+            subtractTime()
+            
         }
     }
 
     
     
     override func viewDidLoad() {
+        
+       /* if buttonState == .ToPaused {
+            progressView.animateProgressView()
+            progressViewTwo.animateProgressView()
+        }*/
+       
         canDisplayBannerAds = true
         
         if NSUserDefaults.standardUserDefaults().objectForKey("PayRate") != nil {
@@ -121,14 +135,13 @@ class ViewController: UIViewController {
     
     
     func setupGame() {
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
         
     }
     
     
     
     func addTime(tPay: Double, newSecs: Double, secondRate: Double) -> Void {
-        buttonState = .Empty
         var totalAdd = blueLabelValue
         var totalAddHours = newSecs / 60 / 60
         totalPay = totalPay + totalAdd
@@ -146,13 +159,14 @@ class ViewController: UIViewController {
     
     
     func subtractTime() {
-        seconds++
+        seconds += 0.01
+        progressView.progressLayer.strokeEnd = CGFloat(seconds * secondRate % settingsDict["LittleCircle"]!)
         blueLabelValue =  Double(round(secondRate * seconds * 100)/100)
         blueLabel.text = "$\(Double(round(secondRate * seconds * 100)/100))"
-        if seconds * secondRate % settingsDict["LittleCircle"]! == 0 {
+     /*   if seconds * secondRate % settingsDict["LittleCircle"]! == 0 {
             progressView.animateProgressView() }
         if seconds * secondRate % settingsDict["BigCircle"]! == 0 {
-            progressViewTwo.animateProgressView() }
+            progressViewTwo.animateProgressView() } */
     }
 }
 

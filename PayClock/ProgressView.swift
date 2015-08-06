@@ -10,7 +10,7 @@ import UIKit
 
 class ProgressView: UIView {
 
-    private let progressLayer: CAShapeLayer = CAShapeLayer()
+     let progressLayer: CAShapeLayer = CAShapeLayer()
     
     private var progressLabel: UILabel
     
