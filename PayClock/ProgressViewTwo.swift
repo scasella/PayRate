@@ -47,11 +47,11 @@ class ProgressViewTwo: UIView {
         let centerPoint = CGPointMake(CGRectGetWidth(frame)/2 , CGRectGetHeight(frame)/2)
         
         var gradientMaskLayer = gradientMask()
-        progressLayer.path = UIBezierPath(arcCenter:centerPoint, radius: CGRectGetWidth(frame)/2 - 60.5, startAngle:startAngle, endAngle:endAngle, clockwise: true).CGPath
+        progressLayer.path = UIBezierPath(arcCenter:centerPoint, radius: CGRectGetWidth(frame)/2 - 60.0, startAngle:startAngle, endAngle:endAngle, clockwise: true).CGPath
         progressLayer.backgroundColor = UIColor.clearColor().CGColor
         progressLayer.fillColor = nil
         progressLayer.strokeColor = UIColor.blackColor().CGColor
-        progressLayer.lineWidth = 25.0
+        progressLayer.lineWidth = 26.0
         progressLayer.strokeStart = 0.0
         progressLayer.strokeEnd = 0.0
         

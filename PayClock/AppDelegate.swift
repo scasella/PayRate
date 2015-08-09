@@ -8,6 +8,7 @@
 
 import UIKit
 
+var toggleSaveTime = false
 var savedTime = NSDate()
 let gregorianCal = NSCalendar(calendarIdentifier: NSGregorianCalendar)
 
@@ -23,8 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillResignActive(application: UIApplication) {
-        NSUserDefaults.standardUserDefaults().objectForKey("buttonState")
-        if buttonState == .ToPaused {
+        if toggleSaveTime == true {
+        NSUserDefaults.standardUserDefaults().setObject(toggleSaveTime, forKey: "toggleSaveTime")
         savedTime = NSDate()
         NSUserDefaults.standardUserDefaults().setObject(savedTime, forKey: "savedTime")
         NSUserDefaults.standardUserDefaults().setObject(seconds, forKey: "seconds")
@@ -41,11 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(application: UIApplication) {
     
+    
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-    if buttonState == .ToPaused {
+    NSUserDefaults.standardUserDefaults().objectForKey("toggleSaveTime")
+    if toggleSaveTime == true {
     NSUserDefaults.standardUserDefaults().objectForKey("seconds")
     NSUserDefaults.standardUserDefaults().objectForKey("savedTime")
         

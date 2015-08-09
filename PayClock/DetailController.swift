@@ -33,7 +33,7 @@ class DetailController: UIViewController {
         if settingsSet == .None {
             performSegueWithIdentifier("backToMain", sender: self)
         } else { resetAllObjects()
-        
+        welcomeLabel.text = "tap below to change settings"
         }}
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

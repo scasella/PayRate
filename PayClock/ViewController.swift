@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     @IBOutlet var cashOutbutton: UIButton!
     @IBOutlet var totalPayLabel: UILabel!
     @IBOutlet var totalHoursLabel: UILabel!
-    @IBOutlet var startButton: UIButton!
+    @IBOutlet var startButton: SpringButton!
     @IBOutlet var progressViewTwo: ProgressViewTwo!
     @IBOutlet var progressView: ProgressView!
     @IBOutlet var settingsIcon: UIButton!
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     @IBOutlet var adBanner: ADBannerView!
 
     
-    
+
     @IBAction func set(sender: AnyObject) {
         settingsIcon.setBackgroundImage(UIImage(named: "SettingsButtonF.png"), forState: UIControlState.Normal)
     }
@@ -50,7 +50,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func cashOut(sender: AnyObject) {
+        blueLabel.hidden = true
+        startButton.setImage(UIImage(named: "CoinImage.png"), forState: UIControlState.Normal)
+        startButton.force = 0.8
+        startButton.duration = 2.0
+        startButton.animate()
         addTime(totalPay, newSecs: seconds, secondRate: secondRate)
+        
     }
     
     
@@ -72,6 +78,7 @@ class ViewController: UIViewController {
             settingsIcon.hidden = true
             setupGame()
             subtractTime()
+            toggleSaveTime = true
             //progressView.animateProgressView()
             //progressViewTwo.animateProgressView()
             //coinBag.hidden = false
@@ -81,11 +88,14 @@ class ViewController: UIViewController {
             blueLabel.text = "Paused"
             cashOutbutton.hidden = false
             settingsIcon.hidden = false
+            toggleSaveTime = false
             buttonState = .ToStartOrResume
             //progressView.progressLayer.strokeEnd = 0.3
             timer.invalidate()
         case .ToResume:
             subtractTime()
+            buttonState = .ToPaused
+            toggleSaveTime = true 
             
         }
     }
