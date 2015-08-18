@@ -13,10 +13,6 @@
 		883C764C1B4384FA00E3A2EF /* bottonBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 883C76471B4384FA00E3A2EF /* bottonBorder.png */; };
 		883C764D1B4384FA00E3A2EF /* bagPopup.png in Resources */ = {isa = PBXBuildFile; fileRef = 883C76481B4384FA00E3A2EF /* bagPopup.png */; };
 		883E028D1B4998CF00661CB3 /* cashoutButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 883E028C1B4998CF00661CB3 /* cashoutButton.png */; };
-		884F3EE21B50892400FC24E4 /* DarkBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 884F3EE01B50892400FC24E4 /* DarkBG.png */; };
-		884F3EE31B50892400FC24E4 /* SettingButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 884F3EE11B50892400FC24E4 /* SettingButton.png */; };
-		884F3EE51B50898400FC24E4 /* WhiteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 884F3EE41B50898400FC24E4 /* WhiteButton.png */; };
-		884F3EFC1B508B4F00FC24E4 /* Seperator.png in Resources */ = {isa = PBXBuildFile; fileRef = 884F3EFB1B508B4F00FC24E4 /* Seperator.png */; };
 		885472691B61CC75004103E3 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8854724D1B61CC75004103E3 /* AsyncButton.swift */; };
 		8854726A1B61CC75004103E3 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8854724E1B61CC75004103E3 /* AsyncImageView.swift */; };
 		8854726B1B61CC75004103E3 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8854724F1B61CC75004103E3 /* AutoTextView.swift */; };
@@ -55,6 +51,8 @@
 		88692B2B1B5AE23000130792 /* SetSave.png in Resources */ = {isa = PBXBuildFile; fileRef = 88692B211B5AE23000130792 /* SetSave.png */; };
 		88692B2C1B5AE23000130792 /* Shape Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 88692B221B5AE23000130792 /* Shape Copy.png */; };
 		88692B2D1B5AE23000130792 /* Shape.png in Resources */ = {isa = PBXBuildFile; fileRef = 88692B231B5AE23000130792 /* Shape.png */; };
+		8875BAF81B82A3D30036E3FF /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875BAF71B82A3D30036E3FF /* CircularProgressView.swift */; };
+		8875BAFA1B82C3840036E3FF /* clearButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8875BAF91B82C3840036E3FF /* clearButton.png */; };
 		8875D1C61B30F15A00B60105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1C51B30F15A00B60105 /* AppDelegate.swift */; };
 		8875D1C81B30F15A00B60105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8875D1C71B30F15A00B60105 /* ViewController.swift */; };
 		8875D1CB1B30F15A00B60105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8875D1C91B30F15A00B60105 /* Main.storyboard */; };
@@ -67,8 +65,6 @@
 		8898E3E91B3F353300EE3E76 /* darkTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8898E3E81B3F353300EE3E76 /* darkTabBar.png */; };
 		88ABFAF71B3791BD00F407CC /* PTSans.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 88ABFAF61B3791BD00F407CC /* PTSans.ttc */; };
 		88ABFAFB1B37A1E000F407CC /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ABFAFA1B37A1E000F407CC /* TextFieldsEffects.swift */; };
-		88AF4ADB1B50A03900DBBA06 /* SettingsButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AF4AD91B50A03900DBBA06 /* SettingsButton2.png */; };
-		88AF4ADC1B50A03900DBBA06 /* SettingsButtonF.png in Resources */ = {isa = PBXBuildFile; fileRef = 88AF4ADA1B50A03900DBBA06 /* SettingsButtonF.png */; };
 		88B102571B40C8B300F2D8F6 /* FallingCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B102561B40C8B300F2D8F6 /* FallingCoinsView.swift */; };
 		88B102601B40C9AA00F2D8F6 /* coinBag25.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B1025A1B40C9AA00F2D8F6 /* coinBag25.png */; };
 		88B102611B40C9AA00F2D8F6 /* Path Copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 88B1025B1B40C9AA00F2D8F6 /* Path Copy 2.png */; };
@@ -106,9 +102,6 @@
 		883C76471B4384FA00E3A2EF /* bottonBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottonBorder.png; sourceTree = "<group>"; };
 		883C76481B4384FA00E3A2EF /* bagPopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bagPopup.png; sourceTree = "<group>"; };
 		883E028C1B4998CF00661CB3 /* cashoutButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cashoutButton.png; sourceTree = "<group>"; };
-		884F3EE01B50892400FC24E4 /* DarkBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkBG.png; sourceTree = "<group>"; };
-		884F3EE11B50892400FC24E4 /* SettingButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingButton.png; sourceTree = "<group>"; };
-		884F3EE41B50898400FC24E4 /* WhiteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WhiteButton.png; sourceTree = "<group>"; };
 		884F3EE61B508A2A00FC24E4 /* SF-UI-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Black.otf"; sourceTree = "<group>"; };
 		884F3EE71B508A2A00FC24E4 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
 		884F3EE81B508A2A00FC24E4 /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
@@ -130,7 +123,6 @@
 		884F3EF81B508A2A00FC24E4 /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
 		884F3EF91B508A2A00FC24E4 /* SF-UI-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Semibold.otf"; sourceTree = "<group>"; };
 		884F3EFA1B508A2A00FC24E4 /* SF-UI-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
-		884F3EFB1B508B4F00FC24E4 /* Seperator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Seperator.png; sourceTree = "<group>"; };
 		8854724D1B61CC75004103E3 /* AsyncButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncButton.swift; sourceTree = "<group>"; };
 		8854724E1B61CC75004103E3 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		8854724F1B61CC75004103E3 /* AutoTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoTextView.swift; sourceTree = "<group>"; };
@@ -169,6 +161,8 @@
 		88692B211B5AE23000130792 /* SetSave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SetSave.png; sourceTree = "<group>"; };
 		88692B221B5AE23000130792 /* Shape Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shape Copy.png"; sourceTree = "<group>"; };
 		88692B231B5AE23000130792 /* Shape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shape.png; sourceTree = "<group>"; };
+		8875BAF71B82A3D30036E3FF /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		8875BAF91B82C3840036E3FF /* clearButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearButton.png; sourceTree = "<group>"; };
 		8875D1C01B30F15A00B60105 /* PepBuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PepBuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8875D1C41B30F15A00B60105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8875D1C51B30F15A00B60105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,8 +179,6 @@
 		8898E3E81B3F353300EE3E76 /* darkTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darkTabBar.png; sourceTree = "<group>"; };
 		88ABFAF61B3791BD00F407CC /* PTSans.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = PTSans.ttc; sourceTree = "<group>"; };
 		88ABFAFA1B37A1E000F407CC /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
-		88AF4AD91B50A03900DBBA06 /* SettingsButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsButton2.png; sourceTree = "<group>"; };
-		88AF4ADA1B50A03900DBBA06 /* SettingsButtonF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsButtonF.png; sourceTree = "<group>"; };
 		88B102561B40C8B300F2D8F6 /* FallingCoinsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingCoinsView.swift; sourceTree = "<group>"; };
 		88B1025A1B40C9AA00F2D8F6 /* coinBag25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coinBag25.png; sourceTree = "<group>"; };
 		88B1025B1B40C9AA00F2D8F6 /* Path Copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Path Copy 2.png"; sourceTree = "<group>"; };
@@ -261,12 +253,6 @@
 				88C001051B77B04600739363 /* whiteButton8.9.png */,
 				88C001011B77AF4500739363 /* CoinImage.png */,
 				88C001021B77AF4500739363 /* redButton.png */,
-				88AF4AD91B50A03900DBBA06 /* SettingsButton2.png */,
-				88AF4ADA1B50A03900DBBA06 /* SettingsButtonF.png */,
-				884F3EE41B50898400FC24E4 /* WhiteButton.png */,
-				884F3EE01B50892400FC24E4 /* DarkBG.png */,
-				884F3EE11B50892400FC24E4 /* SettingButton.png */,
-				884F3EFB1B508B4F00FC24E4 /* Seperator.png */,
 				883E028C1B4998CF00661CB3 /* cashoutButton.png */,
 				883C76451B4384FA00E3A2EF /* settingsIcon.png */,
 				883C76461B4384FA00E3A2EF /* bagIcon.png */,
@@ -352,6 +338,7 @@
 				884F3EFD1B508E6500FC24E4 /* Fonts */,
 				884F3EFE1B508E8200FC24E4 /* Images */,
 				88B102561B40C8B300F2D8F6 /* FallingCoinsView.swift */,
+				8875BAF71B82A3D30036E3FF /* CircularProgressView.swift */,
 				88C14A2A1B3F81C900CC327A /* MadokaTextField.swift */,
 				88ABFAFA1B37A1E000F407CC /* TextFieldsEffects.swift */,
 				88BB63F11B35C8E000EBC6AD /* ProgressView.swift */,
@@ -395,6 +382,7 @@
 		88B4585E1B55ED21002DD9E6 /* SettingsImages */ = {
 			isa = PBXGroup;
 			children = (
+				8875BAF91B82C3840036E3FF /* clearButton.png */,
 				88692B1A1B5AE23000130792 /* $.png */,
 				88692B1B1B5AE23000130792 /* Adjust.png */,
 				88692B1C1B5AE23000130792 /* EtchedLine.png */,
@@ -492,12 +480,9 @@
 			files = (
 				88692B241B5AE23000130792 /* $.png in Resources */,
 				88B102631B40C9AA00F2D8F6 /* Path Copy.png in Resources */,
-				884F3EE21B50892400FC24E4 /* DarkBG.png in Resources */,
 				888E63591B3F917A00969EEF /* coinBagFour.png in Resources */,
 				88692B2B1B5AE23000130792 /* SetSave.png in Resources */,
-				88AF4ADB1B50A03900DBBA06 /* SettingsButton2.png in Resources */,
 				88692B271B5AE23000130792 /* SetBack.png in Resources */,
-				884F3EE31B50892400FC24E4 /* SettingButton.png in Resources */,
 				88692B2D1B5AE23000130792 /* Shape.png in Resources */,
 				8854726D1B61CC75004103E3 /* LoadingView.xib in Resources */,
 				88692B2A1B5AE23000130792 /* SetHome.png in Resources */,
@@ -516,12 +501,11 @@
 				88692B2C1B5AE23000130792 /* Shape Copy.png in Resources */,
 				88C14A251B3F7E3200CC327A /* settingsCard.png in Resources */,
 				8898E3E71B3F350300EE3E76 /* buttonThree.png in Resources */,
+				8875BAFA1B82C3840036E3FF /* clearButton.png in Resources */,
 				883C764A1B4384FA00E3A2EF /* settingsIcon.png in Resources */,
 				883C764C1B4384FA00E3A2EF /* bottonBorder.png in Resources */,
 				8898E3E91B3F353300EE3E76 /* darkTabBar.png in Resources */,
-				88AF4ADC1B50A03900DBBA06 /* SettingsButtonF.png in Resources */,
 				88B102641B40C9AA00F2D8F6 /* Path25.png in Resources */,
-				884F3EFC1B508B4F00FC24E4 /* Seperator.png in Resources */,
 				88692B261B5AE23000130792 /* EtchedLine.png in Resources */,
 				883E028D1B4998CF00661CB3 /* cashoutButton.png in Resources */,
 				88F372861B3735C300BA1713 /* screenTwoBG.png in Resources */,
@@ -530,7 +514,6 @@
 				88F372841B3735C300BA1713 /* screenTwoButton.png in Resources */,
 				88B102601B40C9AA00F2D8F6 /* coinBag25.png in Resources */,
 				88C001061B77B04600739363 /* whiteButton8.9.png in Resources */,
-				884F3EE51B50898400FC24E4 /* WhiteButton.png in Resources */,
 				883C764D1B4384FA00E3A2EF /* bagPopup.png in Resources */,
 				88C14A2D1B3F856E00CC327A /* mainBGThree.png in Resources */,
 			);
@@ -560,6 +543,7 @@
 				8854727F1B61CC75004103E3 /* SpringTextField.swift in Sources */,
 				8875D1C81B30F15A00B60105 /* ViewController.swift in Sources */,
 				8854726E1B61CC75004103E3 /* BlurView.swift in Sources */,
+				8875BAF81B82A3D30036E3FF /* CircularProgressView.swift in Sources */,
 				8875D1C61B30F15A00B60105 /* AppDelegate.swift in Sources */,
 				88C14A2B1B3F81C900CC327A /* MadokaTextField.swift in Sources */,
 				88BB63F41B35E65700EBC6AD /* ProgressViewTwo.swift in Sources */,
@@ -664,7 +648,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -702,6 +686,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

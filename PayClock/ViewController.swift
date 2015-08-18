@@ -35,8 +35,9 @@ class ViewController: UIViewController {
     @IBOutlet var totalPayLabel: UILabel!
     @IBOutlet var totalHoursLabel: UILabel!
     @IBOutlet var startButton: SpringButton!
-    @IBOutlet var progressViewTwo: ProgressViewTwo!
-    @IBOutlet var progressView: ProgressView!
+
+    @IBOutlet var outerCircleUI: CircularProgressView!
+    @IBOutlet var innerCircleUI: CircularProgressView!
     @IBOutlet var settingsIcon: UIButton!
     @IBOutlet var bottomBG: UIImageView!
     @IBOutlet var adBanner: ADBannerView!
@@ -51,9 +52,10 @@ class ViewController: UIViewController {
     
     @IBAction func cashOut(sender: AnyObject) {
         blueLabel.hidden = true
-        startButton.setImage(UIImage(named: "CoinImage.png"), forState: UIControlState.Normal)
+        startButton.setBackgroundImage(UIImage(named: "CoinImage.png"), forState: UIControlState.Normal)
         startButton.force = 0.8
         startButton.duration = 2.0
+        startButton.animation = "fadeIn"
         startButton.animate()
         addTime(totalPay, newSecs: seconds, secondRate: secondRate)
         
@@ -163,8 +165,8 @@ class ViewController: UIViewController {
         cashOutbutton.hidden = true
         settingsIcon.hidden = false
         seconds = 0.0
-        progressView.progressLayer.strokeEnd = 0.0
-        progressViewTwo.progressLayer.strokeEnd = 0.0
+        innerCircleUI.value = 0.0
+        outerCircleUI.value = 0.0
     }
 
     
@@ -173,15 +175,15 @@ class ViewController: UIViewController {
         seconds += 0.1
         var innerCounter = CGFloat(seconds * secondRate / settingsDict["LittleCircle"]! % settingsDict["LittleCircle"]!)
         var outerCounter = CGFloat(seconds * secondRate / settingsDict["BigCircle"]! % settingsDict["BigCircle"]!)
-        progressView.progressLayer.strokeEnd = innerCounter
-        progressViewTwo.progressLayer.strokeEnd = outerCounter
-        if progressView.progressLayer.strokeEnd % 1 >= 1.0 {
+        innerCircleUI.value = innerCounter
+        outerCircleUI.value = outerCounter
+        if  innerCircleUI.value % 1 >= 1.0 {
             //progressView.progressLayer.strokeStart = 0.0
-            progressView.progressLayer.strokeEnd = 0.0
+            innerCircleUI.value = 0.0
         }
-        if progressViewTwo.progressLayer.strokeEnd % 1 >= 1.0 {
+        if outerCircleUI.value % 1 >= 1.0 {
            // progressViewTwo.progressLayer.strokeStart = 0.0
-            progressViewTwo.progressLayer.strokeEnd = 0.0
+            outerCircleUI.value = 0.0
         }
         blueLabelValue =  Double(round(secondRate * seconds * 100)/100)
         blueLabel.text = "$\(Double(round(secondRate * seconds * 100)/100))"

@@ -18,7 +18,8 @@ class DetailController: UIViewController {
   
     var adjustPay = true
     
-    @IBOutlet var welcomeLabel: UILabel!
+
+    @IBOutlet var welcomeLabel: UIButton!
     @IBOutlet var divider: UIImageView!
     @IBOutlet var settingsField: UITextField!
     @IBOutlet var saveButton: UIButton!
@@ -33,8 +34,7 @@ class DetailController: UIViewController {
         if settingsSet == .None {
             performSegueWithIdentifier("backToMain", sender: self)
         } else { resetAllObjects()
-        welcomeLabel.text = "tap below to change settings"
-        }}
+               }}
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "backToMain" {
@@ -114,7 +114,7 @@ class DetailController: UIViewController {
                 
             totalPay = (settingsField.text as NSString).doubleValue
             NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
-                welcomeLabel.text = "Saved"
+           
             
             } else {
             
@@ -123,7 +123,7 @@ class DetailController: UIViewController {
             totalPay = totalPay + adjustAmt
             NSUserDefaults.standardUserDefaults().setObject(totalPay, forKey: "totalPay")
             NSUserDefaults.standardUserDefaults().setObject(totalHours, forKey: "totalHours")
-            welcomeLabel.text = "Saved"
+           
             }
        
             resetAllObjects()
@@ -177,7 +177,7 @@ class DetailController: UIViewController {
     func saveObject(object: String) {
         settingsDict.updateValue((settingsField.text as NSString).doubleValue, forKey: object)
         NSUserDefaults.standardUserDefaults().setObject(settingsDict[object], forKey: object)
-        welcomeLabel.text = "Saved"
+     
         resetAllObjects()
     }
     
